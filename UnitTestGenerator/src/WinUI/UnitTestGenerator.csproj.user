@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="UnitTestGeneratorScreen.Events.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UnitTestGeneratorScreen.RichText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UnitTestGeneratorScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="REF\NSpecTestsForConstructors\NSpecConstructorTestsGeneratorScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="REF\NSpecTestsForConstructors\NSpecConstructorTestsGeneratorScreen_PrivateMethods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UnitTestGeneratorScreen.Fields.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

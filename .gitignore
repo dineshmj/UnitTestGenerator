@@ -3,3 +3,17 @@
 ################################################################################
 
 /.vs
+/UnitTestGenerator/.vs/UnitTestGenerator
+/UnitTestGenerator/obj
+/UnitTestGenerator/REF/.vs/SwissRe.Enterprise.Apps.CodeGenerators
+/UnitTestGenerator/REF/NSpecTestsForConstructors/bin/Debug
+/UnitTestGenerator/REF/NSpecTestsForConstructors/obj/Debug
+/UnitTestGenerator/.vs/ProjectEvaluation
+/UnitTestGenerator/src/Logic/bin/Debug/net6.0
+/UnitTestGenerator/src/Logic/obj
+/UnitTestGenerator/src/WinUI/bin/Debug/net6.0-windows
+/UnitTestGenerator/src/WinUI/obj
+/UnitTestGenerator/src/WinUI/REF
+/UnitTestGenerator/tst/bin/Debug/net6.0
+/UnitTestGenerator/tst/obj
+/UnitTestGenerator/src/Logic/Reflection/Trash

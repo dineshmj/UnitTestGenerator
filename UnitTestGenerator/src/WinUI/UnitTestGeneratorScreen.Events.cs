@@ -16,6 +16,7 @@ namespace UnitTestGenerator
 			{
 				this.openDllDialog.InitialDirectory
 					= Path.GetDirectoryName (this.options.LastBrowsedDllPath);
+				this.openDllDialog.FileName = "*.dll";
 			}
 
 			if (this.openDllDialog.ShowDialog (this) == DialogResult.OK)

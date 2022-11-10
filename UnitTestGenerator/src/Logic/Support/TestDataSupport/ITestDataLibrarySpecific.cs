@@ -10,6 +10,6 @@ namespace UnitTestGenerator.Logic.Support.TestDataSupport
 
         bool IsTestDataLibraryUsed { get; }
 
-        string GetNewInstanceFor (string variableName, string typeName, bool isHappy);
+        string GetNewInstanceFor (string variableName, Type type, bool isHappy);
     }
 }

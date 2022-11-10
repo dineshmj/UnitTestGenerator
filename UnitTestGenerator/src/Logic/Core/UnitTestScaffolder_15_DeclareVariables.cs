@@ -46,63 +46,66 @@ namespace UnitTestGenerator.Logic.Core
 				}
 			}
 
-			if (addFriendlyComments)
+			if (methodReturnType != typeof (void))
 			{
-				builder.AppendLine ("\t\t\t// Expected and actual results");
-			}
-
-			if (isReturnTypeClassOrInterface)
-			{
-				builder.AppendLine ($"\t\t\t{returnTypeName} result = null;");
-			}
-			else
-			{
-				// var defaultValueText = this.GetDefaultValueTextOf (returnTypeName);
-				var defaultValueText = returnTypeName.GetMeaningfulData (isHappy);
-				builder.AppendLine ($"\t\t\t{returnTypeName} result = {defaultValueText};");
-			}
-
-			if (addToDoComments)
-			{
-				builder.AppendLine ($"\t\t\t// TODO: ↓↓ Please set the correct expected value below.");
-			}
-
-			var inlineComment = "// Please specify valid expected result here.";
-
-			if (isReturnTypeClassOrInterface)
-			{
-				if (returnTypeName.StartsWith ("IList<") || returnTypeName.StartsWith ("IDictionary<"))
+				if (addFriendlyComments)
 				{
-					if (utProvider.HasSectionsForBDD)
+					builder.AppendLine ("\t\t\t// Expected and actual results");
+				}
+
+				if (isReturnTypeClassOrInterface)
+				{
+					builder.AppendLine ($"\t\t\t{returnTypeName} result = null;");
+				}
+				else
+				{
+					// var defaultValueText = this.GetDefaultValueTextOf (returnTypeName);
+					var defaultValueText = returnTypeName.GetMeaningfulData (isHappy);
+					builder.AppendLine ($"\t\t\t{returnTypeName} result = {defaultValueText};");
+				}
+
+				if (addToDoComments)
+				{
+					builder.AppendLine ($"\t\t\t// TODO: ↓↓ Please set the correct expected value below.");
+				}
+
+				var inlineComment = "// Please specify valid expected result here.";
+
+				if (isReturnTypeClassOrInterface)
+				{
+					if (returnTypeName.StartsWith ("IList<") || returnTypeName.StartsWith ("IDictionary<"))
 					{
-						builder.AppendLine ($"\t\t\t{returnTypeName} expectedResult = new {returnTypeName.Substring (1)} ();\t\t{inlineComment}");
+						if (utProvider.HasSectionsForBDD)
+						{
+							builder.AppendLine ($"\t\t\t{returnTypeName} expectedResult = new {returnTypeName.Substring (1)} ();\t\t{inlineComment}");
+						}
+						else
+						{
+							builder.AppendLine ($"\t\t\tvar expectedResult = new {returnTypeName.Substring (1)} ();\t\t{inlineComment}");
+						}
 					}
 					else
 					{
-						builder.AppendLine ($"\t\t\tvar expectedResult = new {returnTypeName.Substring (1)} ();\t\t{inlineComment}");
+						builder.AppendLine ($"\t\t\t{returnTypeName} expectedResult = null;\t\t{inlineComment}");
 					}
+
+					builder.Append ("\r\n");
 				}
 				else
 				{
-					builder.AppendLine ($"\t\t\t{returnTypeName} expectedResult = null;\t\t{inlineComment}");
-				}
+					var meaningfulData = returnTypeName.GetMeaningfulData (isHappy);
 
-				builder.Append ("\r\n");
-			}
-			else
-			{
-				var meaningfulData = returnTypeName.GetMeaningfulData (isHappy);
+					if (null != meaningfulData)
+					{
+						builder.AppendLine ($"\t\t\t{returnTypeName} expectedResult = {meaningfulData};\t\t{inlineComment}");
+					}
+					else
+					{
+						builder.AppendLine ($"\t\t\t{returnTypeName} expectedResult = default ({returnTypeName});\t\t{inlineComment}");
+					}
 
-				if (null != meaningfulData)
-				{
-					builder.AppendLine ($"\t\t\t{returnTypeName} expectedResult = {meaningfulData};\t\t{inlineComment}");
+					builder.Append ("\r\n");
 				}
-				else
-				{
-					builder.AppendLine ($"\t\t\t{returnTypeName} expectedResult = default ({returnTypeName});\t\t{inlineComment}");
-				}
-
-				builder.Append ("\r\n");
 			}
 		}
 	}

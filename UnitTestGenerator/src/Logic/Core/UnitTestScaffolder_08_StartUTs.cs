@@ -27,10 +27,10 @@ namespace UnitTestGenerator.Logic.Core
 			}
 		}
 
-		private void DefineUnitTestMethodNameForConstructor (StringBuilder builder)
+		private void DefineUnitTestMethodNameForConstructor (StringBuilder builder, bool isHappy)
 		{
 			// Unit Test for a Constructor.
-			builder.AppendLine ($"\t\tpublic void Constructor{this.context.OverloadRankText}_Test ()");
+			builder.AppendLine ($"\t\tpublic void Constructor{this.context.OverloadRankText}_{ (isHappy ? "HappyPath" : "EdgeCase")}_Test ()");
 			builder.AppendLine (@"		{");
 		}
 

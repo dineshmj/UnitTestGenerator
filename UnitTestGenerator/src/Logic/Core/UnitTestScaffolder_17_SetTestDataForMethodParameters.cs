@@ -38,7 +38,8 @@ namespace UnitTestGenerator.Logic.Core
                     var paramAssignment
 						= testDataPrep.GetNewInstanceFor (
 							oneParameter.Key,
-                            genericTypeName,
+                            // genericTypeName,
+							oneParameter.Value,
 							isHappy
 						);
 

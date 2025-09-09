@@ -55,6 +55,8 @@ namespace UnitTestGenerator
 			"\"Expected value is different.\"",
 			"\"Given that I have valid inputs for the constructor method\"",
 			"\"When I call the constructor method with valid parameters\"",
+			"\"Given that I have invalid inputs for the constructor method\"",
+			"\"When I call the constructor method with invalid parameters\"",
 			"\"Should execute successfully\"",
 			"\"It should execute successfully\"",
 			"\"It should fail to execute\"",

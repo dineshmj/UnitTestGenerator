@@ -7,14 +7,14 @@ namespace UnitTestGenerator.Logic.Core
 	public sealed partial class UnitTestScaffolder
 		: IUnitTestScaffolder
 	{
-		private void StartAssertSection (StringBuilder builder, out string additionalIndent)
+		private void StartAssertSection (StringBuilder builder, bool isHappy, out string additionalIndent)
 		{
 			// Libraries.
 			var utProvider = this.utGen.UtLibraryProvider;
 
 			builder.AppendLine (@"			// Assert");
 
-			var assertStarting = utProvider.GetAssertBlockStarting (out additionalIndent, true);
+			var assertStarting = utProvider.GetAssertBlockStarting (out additionalIndent, isHappy);
 
 			if (string.IsNullOrEmpty (assertStarting) == false)
 			{
@@ -42,14 +42,21 @@ namespace UnitTestGenerator.Logic.Core
 			builder.AppendLine ("\t\t}");
 		}
 
-		private void AssertCaughtException (StringBuilder builder, string additionalIndent)
+		private void AssertCaughtException (StringBuilder builder, bool isHappy, string additionalIndent)
 		{
 			// Libraries.
 			var asserter = this.utGen.FluentLibraryProvider;
 			var targetFieldName = this.context.DeclaringTypeName.ToCamelCase ();
 
-			var shouldBeNullStatement = asserter.GetShouldBeNull ("this.caughtException");
-			var shouldNotBeNullStatement = asserter.GetShouldNotBeNull ($"this.{targetFieldName}");
+			var shouldBeNullStatement
+				= isHappy
+					? asserter.GetShouldBeNull ("this.caughtException")
+					: asserter.GetShouldNotBeNull ("this.caughtException");
+
+			var shouldNotBeNullStatement
+				= isHappy
+					? asserter.GetShouldNotBeNull ($"this.{targetFieldName}")
+					: asserter.GetShouldBeNull ($"this.{targetFieldName}");
 
 			builder.AppendLine ($"\t\t\t{additionalIndent}{shouldBeNullStatement}");
 			builder.AppendLine ($"\t\t\t{additionalIndent}{shouldNotBeNullStatement}");

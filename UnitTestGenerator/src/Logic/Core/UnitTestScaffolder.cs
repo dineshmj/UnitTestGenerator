@@ -2,6 +2,7 @@
 
 using UnitTestGenerator.Logic.Entities;
 using UnitTestGenerator.Logic.Support;
+using UnitTestGenerator.Logic.Support.Extensions;
 using UnitTestGenerator.Logic.Support.FALibrarySupport;
 using UnitTestGenerator.Logic.Support.MockingLibrarySupport;
 using UnitTestGenerator.Logic.Support.TestDataSupport;
@@ -69,8 +70,12 @@ namespace UnitTestGenerator.Logic.Core
 					// Add TEST CASES flower comment.
 					this.AddTestCasesFlowerComment (builder);
 
-					// If this is a constructor, add Unit Test for the same.
-					this.AddConstructorUnitTestIfRelevant (builder);
+					// If this is a constructor, add happy and edge-case Unit Tests for the same.
+					var targetVaribleName = publicMember.ReflectedMemberInfo.DeclaringType.Name.ToCamelCase ();
+
+					this.AddConstructorUnitTestIfRelevant (builder, isHappy: true, targetVaribleName);
+					builder.Append ("\r\n");
+					this.AddConstructorUnitTestIfRelevant (builder, isHappy: false, targetVaribleName);
 
 					// Add a sample happy path and edge case Unit Tests, if it is a method.
 					this.AddUnitTestsForMethodIfRelevant (builder);

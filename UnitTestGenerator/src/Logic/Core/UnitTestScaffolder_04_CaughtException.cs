@@ -19,5 +19,10 @@ namespace UnitTestGenerator.Logic.Core
 		{
 			builder.AppendLine ($"\t\t\t{additionalIndent}this.caughtException = null;");
 		}
+
+		private void SetTargetToNull (StringBuilder builder, string targetVariableName, string additionalIndent)
+		{
+			builder.AppendLine ($"\t\t\t{additionalIndent}this.{targetVariableName} = null;");
+		}
 	}
 }

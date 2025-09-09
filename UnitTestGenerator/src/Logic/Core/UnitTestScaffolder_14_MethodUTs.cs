@@ -45,7 +45,7 @@ namespace UnitTestGenerator.Logic.Core
 					this.EndActSection (builder, out additionalIndent);
 
 					// ASSERT section.
-					this.StartAssertSection (builder, out additionalIndent);
+					this.StartAssertSection (builder, isHappy, out additionalIndent);
 					this.AssertMethodExpectations (builder, verifyAllStatements, additionalIndent,  isHappy);
 					this.EndAssertSection (builder);
 

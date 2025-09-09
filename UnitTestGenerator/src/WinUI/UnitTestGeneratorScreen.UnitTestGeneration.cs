@@ -10,6 +10,9 @@ namespace UnitTestGenerator
 		{
 			var selectedPublicMembers = new List<PublicMember> ();
 
+			var dllName = @"D:\Dropbox\Professional\GitHub\AspNetCoreRESTApiDemo\RESTApisDemo\bin\Debug\net6.0\RESTApisDemo.dll";
+
+
 			foreach (var oneItem in this.publicMethodsPresentCheckedListBox.CheckedItems)
 			{
 				selectedPublicMembers.Add ((PublicMember) oneItem);

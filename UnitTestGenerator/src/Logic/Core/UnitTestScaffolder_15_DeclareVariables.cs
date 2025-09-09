@@ -55,7 +55,7 @@ namespace UnitTestGenerator.Logic.Core
 			{
 				builder.AppendLine ($"\t\t\t{returnTypeName} result = null;");
 			}
-			else
+			else if (returnTypeName != "void")
 			{
 				// var defaultValueText = this.GetDefaultValueTextOf (returnTypeName);
 				var defaultValueText = returnTypeName.GetMeaningfulData (isHappy);
@@ -89,7 +89,7 @@ namespace UnitTestGenerator.Logic.Core
 
 				builder.Append ("\r\n");
 			}
-			else
+			else if (returnTypeName != "void")
 			{
 				var meaningfulData = returnTypeName.GetMeaningfulData (isHappy);
 

@@ -1,3 +1,4 @@
+using System.Reflection;
 using UnitTestGenerator.Logic.Core;
 using UnitTestGenerator.Logic.Entities;
 
@@ -24,6 +25,9 @@ namespace UnitTestGenerator
 
 		private void UnitTestGeneratorScreen_Load (object sender, EventArgs e)
 		{
+			// Set up various .NET Framework runtimes for proper target DLL loading.
+			this.SetupVariousDotNetRuntimesForProperTargetDllLoading ();
+
 			this.doNotTriggerQuickSearch = true;
 			this.SetUIControlsBasedOnScreenZoomLevel ();
 			this.HighlightUIControlsBasedOnUserPreferences ();
@@ -37,6 +41,52 @@ namespace UnitTestGenerator
 			this.quickSearchTextBox.Text = this.options.SearchText;
 			this.doNotTriggerQuickSearch = false;
 			this.options.SetReady ();
+		}
+
+		private void SetupVariousDotNetRuntimesForProperTargetDllLoading ()
+		{
+			var aspDotNetRuntimeAssemblyFolderLocations
+				= new [] {
+					"C:\\Program Files\\dotnet\\shared\\Microsoft.AspNetCore.App",
+					"C:\\Program Files (x86)\\dotnet\\shared\\Microsoft.AspNetCore.App"
+				};
+
+			var aspDotNetFrameworkVersionDirectoryPaths = new List<string> ();
+
+			foreach (var oneLocation in aspDotNetRuntimeAssemblyFolderLocations)
+			{
+				if (Directory.Exists (oneLocation))
+				{
+					var fxVersionSubDirectories = Directory.GetDirectories (oneLocation);
+
+					foreach (var oneFxVersionFolder in fxVersionSubDirectories)
+					{
+						if (Directory.Exists (oneFxVersionFolder))
+						{
+							aspDotNetFrameworkVersionDirectoryPaths.Add (oneFxVersionFolder);
+						}
+					}
+
+					// If the 64-bit parent directory is found, then no need to look for the 32-bit parent directory.
+					break;
+				}
+			}
+
+			AppDomain.CurrentDomain.AssemblyResolve += (s, a) =>
+			{
+				foreach (var onePath in aspDotNetFrameworkVersionDirectoryPaths)
+				{
+					var assemblyName = new AssemblyName (a.Name).Name + ".dll";
+					var assemblyPath = Path.Combine (onePath, assemblyName);
+
+					if (File.Exists (assemblyPath))
+					{
+						return Assembly.LoadFrom (assemblyPath);
+					}
+				}
+
+				return null;
+			};
 		}
 
 		private void SetUIControlsBasedOnScreenZoomLevel ()

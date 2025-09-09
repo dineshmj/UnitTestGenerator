@@ -29,16 +29,36 @@ namespace UnitTestGenerator.Logic.Core
 					builder.AppendLine ($"\t\t\t{additionalIndent}// TODO: ↓↓ Please prepare the correct test data below for this Unit Test.");
 				}
 
+				var last = methodParamDictionary.Last();
+
 				foreach (var oneParameter in methodParamDictionary)
 				{
-					var paramAssignment
+					var genericTypeName = oneParameter.Value.GetRealGenericTypeName();
+
+                    var paramAssignment
 						= testDataPrep.GetNewInstanceFor (
 							oneParameter.Key,
-							oneParameter.Value.GetRealGenericTypeName (),
+                            genericTypeName,
 							isHappy
 						);
 
 					builder.AppendLine ($"\t\t\t{additionalIndent}{(utProvider.HasSectionsForBDD ? string.Empty : "var ")}{paramAssignment}");
+
+					var underlyingElementType = oneParameter.Value.GetElementType ();
+					var isUnderlyingTypeGeneric
+							= (underlyingElementType != null)
+								? underlyingElementType.IsGenericType || underlyingElementType.IsGenericParameter
+								: false;
+
+					if (oneParameter.Value.IsGenericType || oneParameter.Value.IsGenericParameter || genericTypeName.Contains('<') || isUnderlyingTypeGeneric) 
+					{
+						builder.AppendLine("\t\t\t// TODO: ↑↑ Please replace the generic parameter type used above with a valid runtime type.");
+
+						if (! oneParameter.Equals (last)) 
+						{
+                            builder.AppendLine();
+                        }
+					}
 				}
 			}
 		}

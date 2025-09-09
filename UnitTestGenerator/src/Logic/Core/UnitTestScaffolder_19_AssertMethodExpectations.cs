@@ -19,6 +19,8 @@ namespace UnitTestGenerator.Logic.Core
 			// Options.
 			var addToDoComments = this.utGen.AddToDoDirectiveComments;
 
+			var atLeastOneAssertionLineAdded = false;
+
 			if (returnType != typeof (void))
 			{
 				IList<string> shouldBeEqualStatements;
@@ -34,12 +36,14 @@ namespace UnitTestGenerator.Logic.Core
 
 				if (addToDoComments)
 				{
+					atLeastOneAssertionLineAdded = true;
 					builder.AppendLine ($"\t\t\t{additionalIndent}// TODO: ↓↓ Please set the correct {(isHappy ? "positive" : "negative")} assert statement below.");
 				}
 
 				foreach (var oneStatement in shouldBeEqualStatements)
 				{
-					builder.AppendLine ($"\t\t\t{additionalIndent}{oneStatement}");
+                    atLeastOneAssertionLineAdded = true;
+                    builder.AppendLine ($"\t\t\t{additionalIndent}{oneStatement}");
 				}
 			}
 
@@ -56,6 +60,11 @@ namespace UnitTestGenerator.Logic.Core
 					builder.AppendLine ($"\t\t\t{additionalIndent}{oneVerifyStatement}");
 				}
 			}
+
+			if (atLeastOneAssertionLineAdded == false)
+			{
+                builder.AppendLine($"\t\t\t// Add assertion statements here.");
+            }
 		}
 	}
 }

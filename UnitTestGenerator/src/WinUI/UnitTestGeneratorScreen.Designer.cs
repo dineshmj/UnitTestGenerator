@@ -20,1112 +20,1112 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+		#region Windows Form Designer generated code
 
-        /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
-        /// </summary>
-        private void InitializeComponent()
-        {
-			this.components = new System.ComponentModel.Container();
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UnitTestGeneratorScreen));
-			this.unitGenTabControl = new System.Windows.Forms.TabControl();
-			this.targetPublicMethodsTabPage = new System.Windows.Forms.TabPage();
-			this.panel6 = new System.Windows.Forms.Panel();
-			this.deselectAllButton = new System.Windows.Forms.Button();
-			this.selectAllButton = new System.Windows.Forms.Button();
-			this.generateUnitTestsButton = new System.Windows.Forms.Button();
-			this.publicMethodsPresentCheckedListBox = new System.Windows.Forms.CheckedListBox();
-			this.quickSearchTextBox = new System.Windows.Forms.TextBox();
-			this.quickSearchLabel = new System.Windows.Forms.Label();
-			this.concreteClassesDropDownList = new System.Windows.Forms.ComboBox();
-			this.browseDllButton = new System.Windows.Forms.Button();
-			this.dllPathTextBox = new System.Windows.Forms.TextBox();
-			this.concreteClassLabel = new System.Windows.Forms.Label();
-			this.dllPathLabel = new System.Windows.Forms.Label();
-			this.selectTargetClassSectionLabel = new System.Windows.Forms.Label();
-			this.concreteClassPictureBox = new System.Windows.Forms.PictureBox();
-			this.generatedUnitTestsTabPage = new System.Windows.Forms.TabPage();
-			this.panel7 = new System.Windows.Forms.Panel();
-			this.selectedMethodsListBox = new System.Windows.Forms.ListBox();
-			this.copyUnitTestCodeButton = new System.Windows.Forms.Button();
-			this.saveUnitTestsButton = new System.Windows.Forms.Button();
-			this.generatedUnitTestRichTextBox = new System.Windows.Forms.RichTextBox();
-			this.unitTestOptionsTabPage = new System.Windows.Forms.TabPage();
-			this.resetToDefaultOptionsButton = new System.Windows.Forms.Button();
-			this.rememberMyPreferencesCheckBox = new System.Windows.Forms.CheckBox();
-			this.addFriendlyCommentsCheckBox = new System.Windows.Forms.CheckBox();
-			this.addToDoStatementsCheckBox = new System.Windows.Forms.CheckBox();
-			this.addAssertionForVoidDependencyCallsCheckBox = new System.Windows.Forms.CheckBox();
-			this.addUsingNamespacesCheckBox = new System.Windows.Forms.CheckBox();
-			this.panel5 = new System.Windows.Forms.Panel();
-			this.utMethodNameStartsWithWhenRadioButton = new System.Windows.Forms.RadioButton();
-			this.utMethodNameStartsWithShouldRadioButton = new System.Windows.Forms.RadioButton();
-			this.utMethodNamingStyleHighlighterLabel = new System.Windows.Forms.Label();
-			this.unitTestMethodNamingStyleSectionLabel = new System.Windows.Forms.Label();
-			this.panel4 = new System.Windows.Forms.Panel();
-			this.testData5RadioButton = new System.Windows.Forms.RadioButton();
-			this.testData4RadioButton = new System.Windows.Forms.RadioButton();
-			this.testData3RadioButton = new System.Windows.Forms.RadioButton();
-			this.autoFixtureRadioButton = new System.Windows.Forms.RadioButton();
-			this.nBuilderRadioButton = new System.Windows.Forms.RadioButton();
-			this.testDataPrepLibraryHighlighterLabel = new System.Windows.Forms.Label();
-			this.testDataPrepLibraryPictureBox = new System.Windows.Forms.PictureBox();
-			this.testDataPrepLibrarySectionLabel = new System.Windows.Forms.Label();
-			this.panel3 = new System.Windows.Forms.Panel();
-			this.nSureRadioButton = new System.Windows.Forms.RadioButton();
-			this.nFluentRadioButton = new System.Windows.Forms.RadioButton();
-			this.shouldRadioButton = new System.Windows.Forms.RadioButton();
-			this.shouldlyRadioButton = new System.Windows.Forms.RadioButton();
-			this.fluentAssertionsRadioButton = new System.Windows.Forms.RadioButton();
-			this.fluentLibraryHighlighterLabel = new System.Windows.Forms.Label();
-			this.fluentAssertionLibraryPictureBox = new System.Windows.Forms.PictureBox();
-			this.fluentAssertionLibrarySectionLabel = new System.Windows.Forms.Label();
-			this.panel2 = new System.Windows.Forms.Panel();
-			this.rhinoMockRadioButton = new System.Windows.Forms.RadioButton();
-			this.fakeItEasyRadioButton = new System.Windows.Forms.RadioButton();
-			this.justMockLiteRadioButton = new System.Windows.Forms.RadioButton();
-			this.nSubstituteRadioButton = new System.Windows.Forms.RadioButton();
-			this.moqRadioButton = new System.Windows.Forms.RadioButton();
-			this.mockLibraryHighlighterLabel = new System.Windows.Forms.Label();
-			this.mockLibraryPictureBox = new System.Windows.Forms.PictureBox();
-			this.mockingLibrarySectionLabel = new System.Windows.Forms.Label();
-			this.panel1 = new System.Windows.Forms.Panel();
-			this.unitTestFrameworkSectionLabel = new System.Windows.Forms.Label();
-			this.nSpecRadioButton = new System.Windows.Forms.RadioButton();
-			this.xBehaveRadioButton = new System.Windows.Forms.RadioButton();
-			this.msTestRadioButton = new System.Windows.Forms.RadioButton();
-			this.xUnitRadioButton = new System.Windows.Forms.RadioButton();
-			this.nUnitRadioButton = new System.Windows.Forms.RadioButton();
-			this.utLibraryHighlighterLabel = new System.Windows.Forms.Label();
-			this.utLibraryPictureBox = new System.Windows.Forms.PictureBox();
-			this.openDllDialog = new System.Windows.Forms.OpenFileDialog();
-			this.backgroundImageList = new System.Windows.Forms.ImageList(this.components);
-			this.whereToSaveFolderDialog = new System.Windows.Forms.FolderBrowserDialog();
-			this.unitGenTabControl.SuspendLayout();
-			this.targetPublicMethodsTabPage.SuspendLayout();
-			this.panel6.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.concreteClassPictureBox)).BeginInit();
-			this.generatedUnitTestsTabPage.SuspendLayout();
-			this.panel7.SuspendLayout();
-			this.unitTestOptionsTabPage.SuspendLayout();
-			this.panel5.SuspendLayout();
-			this.panel4.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.testDataPrepLibraryPictureBox)).BeginInit();
-			this.panel3.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.fluentAssertionLibraryPictureBox)).BeginInit();
-			this.panel2.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.mockLibraryPictureBox)).BeginInit();
-			this.panel1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.utLibraryPictureBox)).BeginInit();
-			this.SuspendLayout();
+		/// <summary>
+		///  Required method for Designer support - do not modify
+		///  the contents of this method with the code editor.
+		/// </summary>
+		private void InitializeComponent ()
+		{
+			components = new System.ComponentModel.Container ();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager (typeof (UnitTestGeneratorScreen));
+			unitGenTabControl = new TabControl ();
+			targetPublicMethodsTabPage = new TabPage ();
+			panel6 = new Panel ();
+			deselectAllButton = new Button ();
+			selectAllButton = new Button ();
+			generateUnitTestsButton = new Button ();
+			publicMethodsPresentCheckedListBox = new CheckedListBox ();
+			quickSearchTextBox = new TextBox ();
+			quickSearchLabel = new Label ();
+			concreteClassesDropDownList = new ComboBox ();
+			browseDllButton = new Button ();
+			dllPathTextBox = new TextBox ();
+			concreteClassLabel = new Label ();
+			dllPathLabel = new Label ();
+			selectTargetClassSectionLabel = new Label ();
+			concreteClassPictureBox = new PictureBox ();
+			generatedUnitTestsTabPage = new TabPage ();
+			panel7 = new Panel ();
+			selectedMethodsListBox = new ListBox ();
+			copyUnitTestCodeButton = new Button ();
+			saveUnitTestsButton = new Button ();
+			generatedUnitTestRichTextBox = new RichTextBox ();
+			unitTestOptionsTabPage = new TabPage ();
+			resetToDefaultOptionsButton = new Button ();
+			rememberMyPreferencesCheckBox = new CheckBox ();
+			addFriendlyCommentsCheckBox = new CheckBox ();
+			addToDoStatementsCheckBox = new CheckBox ();
+			addAssertionForVoidDependencyCallsCheckBox = new CheckBox ();
+			addUsingNamespacesCheckBox = new CheckBox ();
+			panel5 = new Panel ();
+			utMethodNameStartsWithWhenRadioButton = new RadioButton ();
+			utMethodNameStartsWithShouldRadioButton = new RadioButton ();
+			utMethodNamingStyleHighlighterLabel = new Label ();
+			unitTestMethodNamingStyleSectionLabel = new Label ();
+			panel4 = new Panel ();
+			testData5RadioButton = new RadioButton ();
+			testData4RadioButton = new RadioButton ();
+			testData3RadioButton = new RadioButton ();
+			autoFixtureRadioButton = new RadioButton ();
+			nBuilderRadioButton = new RadioButton ();
+			testDataPrepLibraryHighlighterLabel = new Label ();
+			testDataPrepLibraryPictureBox = new PictureBox ();
+			testDataPrepLibrarySectionLabel = new Label ();
+			panel3 = new Panel ();
+			nSureRadioButton = new RadioButton ();
+			nFluentRadioButton = new RadioButton ();
+			shouldRadioButton = new RadioButton ();
+			shouldlyRadioButton = new RadioButton ();
+			fluentAssertionsRadioButton = new RadioButton ();
+			fluentLibraryHighlighterLabel = new Label ();
+			fluentAssertionLibraryPictureBox = new PictureBox ();
+			fluentAssertionLibrarySectionLabel = new Label ();
+			panel2 = new Panel ();
+			rhinoMockRadioButton = new RadioButton ();
+			fakeItEasyRadioButton = new RadioButton ();
+			justMockLiteRadioButton = new RadioButton ();
+			nSubstituteRadioButton = new RadioButton ();
+			moqRadioButton = new RadioButton ();
+			mockLibraryHighlighterLabel = new Label ();
+			mockLibraryPictureBox = new PictureBox ();
+			mockingLibrarySectionLabel = new Label ();
+			panel1 = new Panel ();
+			unitTestFrameworkSectionLabel = new Label ();
+			nSpecRadioButton = new RadioButton ();
+			xBehaveRadioButton = new RadioButton ();
+			msTestRadioButton = new RadioButton ();
+			xUnitRadioButton = new RadioButton ();
+			nUnitRadioButton = new RadioButton ();
+			utLibraryHighlighterLabel = new Label ();
+			utLibraryPictureBox = new PictureBox ();
+			openDllDialog = new OpenFileDialog ();
+			backgroundImageList = new ImageList (components);
+			whereToSaveFolderDialog = new FolderBrowserDialog ();
+			unitGenTabControl.SuspendLayout ();
+			targetPublicMethodsTabPage.SuspendLayout ();
+			panel6.SuspendLayout ();
+			((System.ComponentModel.ISupportInitialize) concreteClassPictureBox).BeginInit ();
+			generatedUnitTestsTabPage.SuspendLayout ();
+			panel7.SuspendLayout ();
+			unitTestOptionsTabPage.SuspendLayout ();
+			panel5.SuspendLayout ();
+			panel4.SuspendLayout ();
+			((System.ComponentModel.ISupportInitialize) testDataPrepLibraryPictureBox).BeginInit ();
+			panel3.SuspendLayout ();
+			((System.ComponentModel.ISupportInitialize) fluentAssertionLibraryPictureBox).BeginInit ();
+			panel2.SuspendLayout ();
+			((System.ComponentModel.ISupportInitialize) mockLibraryPictureBox).BeginInit ();
+			panel1.SuspendLayout ();
+			((System.ComponentModel.ISupportInitialize) utLibraryPictureBox).BeginInit ();
+			SuspendLayout ();
 			// 
 			// unitGenTabControl
 			// 
-			this.unitGenTabControl.Controls.Add(this.targetPublicMethodsTabPage);
-			this.unitGenTabControl.Controls.Add(this.generatedUnitTestsTabPage);
-			this.unitGenTabControl.Controls.Add(this.unitTestOptionsTabPage);
-			this.unitGenTabControl.Font = new System.Drawing.Font("Helvetica-Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.unitGenTabControl.Location = new System.Drawing.Point(17, 18);
-			this.unitGenTabControl.Name = "unitGenTabControl";
-			this.unitGenTabControl.SelectedIndex = 0;
-			this.unitGenTabControl.Size = new System.Drawing.Size(1873, 1003);
-			this.unitGenTabControl.TabIndex = 0;
+			unitGenTabControl.Controls.Add (targetPublicMethodsTabPage);
+			unitGenTabControl.Controls.Add (generatedUnitTestsTabPage);
+			unitGenTabControl.Controls.Add (unitTestOptionsTabPage);
+			unitGenTabControl.Font = new Font ("Helvetica-Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point);
+			unitGenTabControl.Location = new Point (17, 18);
+			unitGenTabControl.Name = "unitGenTabControl";
+			unitGenTabControl.SelectedIndex = 0;
+			unitGenTabControl.Size = new Size (1873, 1003);
+			unitGenTabControl.TabIndex = 0;
 			// 
 			// targetPublicMethodsTabPage
 			// 
-			this.targetPublicMethodsTabPage.BackColor = System.Drawing.Color.MediumAquamarine;
-			this.targetPublicMethodsTabPage.Controls.Add(this.panel6);
-			this.targetPublicMethodsTabPage.Font = new System.Drawing.Font("Bookman Old Style", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-			this.targetPublicMethodsTabPage.ForeColor = System.Drawing.Color.Gray;
-			this.targetPublicMethodsTabPage.Location = new System.Drawing.Point(4, 29);
-			this.targetPublicMethodsTabPage.Name = "targetPublicMethodsTabPage";
-			this.targetPublicMethodsTabPage.Padding = new System.Windows.Forms.Padding(3);
-			this.targetPublicMethodsTabPage.Size = new System.Drawing.Size(1865, 970);
-			this.targetPublicMethodsTabPage.TabIndex = 1;
-			this.targetPublicMethodsTabPage.Text = "        Target Concrete Class && Method        ";
+			targetPublicMethodsTabPage.BackColor = Color.MediumAquamarine;
+			targetPublicMethodsTabPage.Controls.Add (panel6);
+			targetPublicMethodsTabPage.Font = new Font ("Bookman Old Style", 14F,  FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+			targetPublicMethodsTabPage.ForeColor = Color.Gray;
+			targetPublicMethodsTabPage.Location = new Point (4, 29);
+			targetPublicMethodsTabPage.Name = "targetPublicMethodsTabPage";
+			targetPublicMethodsTabPage.Padding = new Padding (3);
+			targetPublicMethodsTabPage.Size = new Size (1865, 970);
+			targetPublicMethodsTabPage.TabIndex = 1;
+			targetPublicMethodsTabPage.Text = "        Target Concrete Class && Method        ";
 			// 
 			// panel6
 			// 
-			this.panel6.BackColor = System.Drawing.Color.Silver;
-			this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.panel6.Controls.Add(this.deselectAllButton);
-			this.panel6.Controls.Add(this.selectAllButton);
-			this.panel6.Controls.Add(this.generateUnitTestsButton);
-			this.panel6.Controls.Add(this.publicMethodsPresentCheckedListBox);
-			this.panel6.Controls.Add(this.quickSearchTextBox);
-			this.panel6.Controls.Add(this.quickSearchLabel);
-			this.panel6.Controls.Add(this.concreteClassesDropDownList);
-			this.panel6.Controls.Add(this.browseDllButton);
-			this.panel6.Controls.Add(this.dllPathTextBox);
-			this.panel6.Controls.Add(this.concreteClassLabel);
-			this.panel6.Controls.Add(this.dllPathLabel);
-			this.panel6.Controls.Add(this.selectTargetClassSectionLabel);
-			this.panel6.Controls.Add(this.concreteClassPictureBox);
-			this.panel6.Location = new System.Drawing.Point(20, 20);
-			this.panel6.Name = "panel6";
-			this.panel6.Size = new System.Drawing.Size(1826, 923);
-			this.panel6.TabIndex = 7;
+			panel6.BackColor = Color.Silver;
+			panel6.BorderStyle = BorderStyle.Fixed3D;
+			panel6.Controls.Add (deselectAllButton);
+			panel6.Controls.Add (selectAllButton);
+			panel6.Controls.Add (generateUnitTestsButton);
+			panel6.Controls.Add (publicMethodsPresentCheckedListBox);
+			panel6.Controls.Add (quickSearchTextBox);
+			panel6.Controls.Add (quickSearchLabel);
+			panel6.Controls.Add (concreteClassesDropDownList);
+			panel6.Controls.Add (browseDllButton);
+			panel6.Controls.Add (dllPathTextBox);
+			panel6.Controls.Add (concreteClassLabel);
+			panel6.Controls.Add (dllPathLabel);
+			panel6.Controls.Add (selectTargetClassSectionLabel);
+			panel6.Controls.Add (concreteClassPictureBox);
+			panel6.Location = new Point (20, 20);
+			panel6.Name = "panel6";
+			panel6.Size = new Size (1826, 923);
+			panel6.TabIndex = 7;
 			// 
 			// deselectAllButton
 			// 
-			this.deselectAllButton.BackColor = System.Drawing.Color.Silver;
-			this.deselectAllButton.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.deselectAllButton.ForeColor = System.Drawing.Color.Black;
-			this.deselectAllButton.Location = new System.Drawing.Point(1460, 720);
-			this.deselectAllButton.Name = "deselectAllButton";
-			this.deselectAllButton.Size = new System.Drawing.Size(309, 52);
-			this.deselectAllButton.TabIndex = 33;
-			this.deselectAllButton.Text = "De-select All";
-			this.deselectAllButton.UseVisualStyleBackColor = false;
-			this.deselectAllButton.Click += new System.EventHandler(this.deselectAllButton_Click);
+			deselectAllButton.BackColor = Color.Silver;
+			deselectAllButton.Font = new Font ("Candara", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+			deselectAllButton.ForeColor = Color.Black;
+			deselectAllButton.Location = new Point (1460, 720);
+			deselectAllButton.Name = "deselectAllButton";
+			deselectAllButton.Size = new Size (309, 52);
+			deselectAllButton.TabIndex = 33;
+			deselectAllButton.Text = "De-select All";
+			deselectAllButton.UseVisualStyleBackColor = false;
+			deselectAllButton.Click += deselectAllButton_Click;
 			// 
 			// selectAllButton
 			// 
-			this.selectAllButton.BackColor = System.Drawing.Color.Silver;
-			this.selectAllButton.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.selectAllButton.ForeColor = System.Drawing.Color.Black;
-			this.selectAllButton.Location = new System.Drawing.Point(1460, 778);
-			this.selectAllButton.Name = "selectAllButton";
-			this.selectAllButton.Size = new System.Drawing.Size(309, 52);
-			this.selectAllButton.TabIndex = 33;
-			this.selectAllButton.Text = "Select All";
-			this.selectAllButton.UseVisualStyleBackColor = false;
-			this.selectAllButton.Click += new System.EventHandler(this.selectAllButton_Click);
+			selectAllButton.BackColor = Color.Silver;
+			selectAllButton.Font = new Font ("Candara", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+			selectAllButton.ForeColor = Color.Black;
+			selectAllButton.Location = new Point (1460, 778);
+			selectAllButton.Name = "selectAllButton";
+			selectAllButton.Size = new Size (309, 52);
+			selectAllButton.TabIndex = 33;
+			selectAllButton.Text = "Select All";
+			selectAllButton.UseVisualStyleBackColor = false;
+			selectAllButton.Click += selectAllButton_Click;
 			// 
 			// generateUnitTestsButton
 			// 
-			this.generateUnitTestsButton.BackColor = System.Drawing.Color.ForestGreen;
-			this.generateUnitTestsButton.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.generateUnitTestsButton.ForeColor = System.Drawing.Color.White;
-			this.generateUnitTestsButton.Location = new System.Drawing.Point(1460, 836);
-			this.generateUnitTestsButton.Name = "generateUnitTestsButton";
-			this.generateUnitTestsButton.Size = new System.Drawing.Size(309, 52);
-			this.generateUnitTestsButton.TabIndex = 33;
-			this.generateUnitTestsButton.Text = "Generate Unit Tests";
-			this.generateUnitTestsButton.UseVisualStyleBackColor = false;
-			this.generateUnitTestsButton.Click += new System.EventHandler(this.generateUnitTestsButton_Click);
+			generateUnitTestsButton.BackColor = Color.ForestGreen;
+			generateUnitTestsButton.Font = new Font ("Candara", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+			generateUnitTestsButton.ForeColor = Color.White;
+			generateUnitTestsButton.Location = new Point (1460, 836);
+			generateUnitTestsButton.Name = "generateUnitTestsButton";
+			generateUnitTestsButton.Size = new Size (309, 52);
+			generateUnitTestsButton.TabIndex = 33;
+			generateUnitTestsButton.Text = "Generate Unit Tests";
+			generateUnitTestsButton.UseVisualStyleBackColor = false;
+			generateUnitTestsButton.Click += generateUnitTestsButton_Click;
 			// 
 			// publicMethodsPresentCheckedListBox
 			// 
-			this.publicMethodsPresentCheckedListBox.CheckOnClick = true;
-			this.publicMethodsPresentCheckedListBox.Font = new System.Drawing.Font("Cascadia Code SemiLight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.publicMethodsPresentCheckedListBox.FormattingEnabled = true;
-			this.publicMethodsPresentCheckedListBox.Location = new System.Drawing.Point(15, 125);
-			this.publicMethodsPresentCheckedListBox.Name = "publicMethodsPresentCheckedListBox";
-			this.publicMethodsPresentCheckedListBox.Size = new System.Drawing.Size(1789, 781);
-			this.publicMethodsPresentCheckedListBox.TabIndex = 34;
-			this.publicMethodsPresentCheckedListBox.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.publicMethodsPresentCheckedListBox_ItemCheck);
+			publicMethodsPresentCheckedListBox.CheckOnClick = true;
+			publicMethodsPresentCheckedListBox.Font = new Font ("Cascadia Code SemiLight", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			publicMethodsPresentCheckedListBox.FormattingEnabled = true;
+			publicMethodsPresentCheckedListBox.Location = new Point (15, 125);
+			publicMethodsPresentCheckedListBox.Name = "publicMethodsPresentCheckedListBox";
+			publicMethodsPresentCheckedListBox.Size = new Size (1789, 781);
+			publicMethodsPresentCheckedListBox.TabIndex = 34;
+			publicMethodsPresentCheckedListBox.ItemCheck += publicMethodsPresentCheckedListBox_ItemCheck;
 			// 
 			// quickSearchTextBox
 			// 
-			this.quickSearchTextBox.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.quickSearchTextBox.Location = new System.Drawing.Point(442, 81);
-			this.quickSearchTextBox.Name = "quickSearchTextBox";
-			this.quickSearchTextBox.Size = new System.Drawing.Size(1362, 26);
-			this.quickSearchTextBox.TabIndex = 32;
-			this.quickSearchTextBox.TextChanged += new System.EventHandler(this.quickSearchTextBox_TextChanged);
+			quickSearchTextBox.Font = new Font ("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			quickSearchTextBox.Location = new Point (442, 81);
+			quickSearchTextBox.Name = "quickSearchTextBox";
+			quickSearchTextBox.Size = new Size (1362, 26);
+			quickSearchTextBox.TabIndex = 32;
+			quickSearchTextBox.TextChanged += quickSearchTextBox_TextChanged;
 			// 
 			// quickSearchLabel
 			// 
-			this.quickSearchLabel.AutoSize = true;
-			this.quickSearchLabel.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.quickSearchLabel.ForeColor = System.Drawing.Color.Black;
-			this.quickSearchLabel.Location = new System.Drawing.Point(340, 84);
-			this.quickSearchLabel.Name = "quickSearchLabel";
-			this.quickSearchLabel.Size = new System.Drawing.Size(102, 18);
-			this.quickSearchLabel.TabIndex = 31;
-			this.quickSearchLabel.Text = "Quick Search :";
-			this.quickSearchLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			quickSearchLabel.AutoSize = true;
+			quickSearchLabel.Font = new Font ("Tahoma", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+			quickSearchLabel.ForeColor = Color.Black;
+			quickSearchLabel.Location = new Point (340, 84);
+			quickSearchLabel.Name = "quickSearchLabel";
+			quickSearchLabel.Size = new Size (102, 18);
+			quickSearchLabel.TabIndex = 31;
+			quickSearchLabel.Text = "Quick Search :";
+			quickSearchLabel.TextAlign = ContentAlignment.MiddleRight;
 			// 
 			// concreteClassesDropDownList
 			// 
-			this.concreteClassesDropDownList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.concreteClassesDropDownList.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.concreteClassesDropDownList.FormattingEnabled = true;
-			this.concreteClassesDropDownList.Location = new System.Drawing.Point(442, 48);
-			this.concreteClassesDropDownList.Name = "concreteClassesDropDownList";
-			this.concreteClassesDropDownList.Size = new System.Drawing.Size(1362, 27);
-			this.concreteClassesDropDownList.TabIndex = 30;
-			this.concreteClassesDropDownList.SelectedIndexChanged += new System.EventHandler(this.concreteClassesDropDownList_SelectedIndexChanged);
+			concreteClassesDropDownList.DropDownStyle = ComboBoxStyle.DropDownList;
+			concreteClassesDropDownList.Font = new Font ("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			concreteClassesDropDownList.FormattingEnabled = true;
+			concreteClassesDropDownList.Location = new Point (442, 48);
+			concreteClassesDropDownList.Name = "concreteClassesDropDownList";
+			concreteClassesDropDownList.Size = new Size (1362, 27);
+			concreteClassesDropDownList.TabIndex = 30;
+			concreteClassesDropDownList.SelectedIndexChanged += concreteClassesDropDownList_SelectedIndexChanged;
 			// 
 			// browseDllButton
 			// 
-			this.browseDllButton.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.browseDllButton.ForeColor = System.Drawing.Color.Black;
-			this.browseDllButton.Location = new System.Drawing.Point(1772, 15);
-			this.browseDllButton.Name = "browseDllButton";
-			this.browseDllButton.Size = new System.Drawing.Size(32, 26);
-			this.browseDllButton.TabIndex = 29;
-			this.browseDllButton.Text = "...";
-			this.browseDllButton.UseVisualStyleBackColor = true;
-			this.browseDllButton.Click += new System.EventHandler(this.browseDllButton_Click);
+			browseDllButton.Font = new Font ("Tahoma", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			browseDllButton.ForeColor = Color.Black;
+			browseDllButton.Location = new Point (1772, 15);
+			browseDllButton.Name = "browseDllButton";
+			browseDllButton.Size = new Size (32, 26);
+			browseDllButton.TabIndex = 29;
+			browseDllButton.Text = "...";
+			browseDllButton.UseVisualStyleBackColor = true;
+			browseDllButton.Click += browseDllButton_Click;
 			// 
 			// dllPathTextBox
 			// 
-			this.dllPathTextBox.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.dllPathTextBox.Location = new System.Drawing.Point(442, 15);
-			this.dllPathTextBox.Name = "dllPathTextBox";
-			this.dllPathTextBox.Size = new System.Drawing.Size(1324, 26);
-			this.dllPathTextBox.TabIndex = 28;
-			this.dllPathTextBox.TextChanged += new System.EventHandler(this.dllPathTextBox_TextChanged);
+			dllPathTextBox.Font = new Font ("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			dllPathTextBox.Location = new Point (442, 15);
+			dllPathTextBox.Name = "dllPathTextBox";
+			dllPathTextBox.Size = new Size (1324, 26);
+			dllPathTextBox.TabIndex = 28;
+			dllPathTextBox.TextChanged += dllPathTextBox_TextChanged;
 			// 
 			// concreteClassLabel
 			// 
-			this.concreteClassLabel.AutoSize = true;
-			this.concreteClassLabel.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.concreteClassLabel.ForeColor = System.Drawing.Color.Black;
-			this.concreteClassLabel.Location = new System.Drawing.Point(328, 51);
-			this.concreteClassLabel.Name = "concreteClassLabel";
-			this.concreteClassLabel.Size = new System.Drawing.Size(114, 18);
-			this.concreteClassLabel.TabIndex = 26;
-			this.concreteClassLabel.Text = "Concrete Class :";
-			this.concreteClassLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			concreteClassLabel.AutoSize = true;
+			concreteClassLabel.Font = new Font ("Tahoma", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+			concreteClassLabel.ForeColor = Color.Black;
+			concreteClassLabel.Location = new Point (328, 51);
+			concreteClassLabel.Name = "concreteClassLabel";
+			concreteClassLabel.Size = new Size (114, 18);
+			concreteClassLabel.TabIndex = 26;
+			concreteClassLabel.Text = "Concrete Class :";
+			concreteClassLabel.TextAlign = ContentAlignment.MiddleRight;
 			// 
 			// dllPathLabel
 			// 
-			this.dllPathLabel.AutoSize = true;
-			this.dllPathLabel.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.dllPathLabel.ForeColor = System.Drawing.Color.Black;
-			this.dllPathLabel.Location = new System.Drawing.Point(366, 20);
-			this.dllPathLabel.Name = "dllPathLabel";
-			this.dllPathLabel.Size = new System.Drawing.Size(76, 18);
-			this.dllPathLabel.TabIndex = 27;
-			this.dllPathLabel.Text = "DLL Path :";
-			this.dllPathLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			dllPathLabel.AutoSize = true;
+			dllPathLabel.Font = new Font ("Tahoma", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+			dllPathLabel.ForeColor = Color.Black;
+			dllPathLabel.Location = new Point (366, 20);
+			dllPathLabel.Name = "dllPathLabel";
+			dllPathLabel.Size = new Size (76, 18);
+			dllPathLabel.TabIndex = 27;
+			dllPathLabel.Text = "DLL Path :";
+			dllPathLabel.TextAlign = ContentAlignment.MiddleRight;
 			// 
 			// selectTargetClassSectionLabel
 			// 
-			this.selectTargetClassSectionLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-			this.selectTargetClassSectionLabel.Font = new System.Drawing.Font("Candara", 18F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
-			this.selectTargetClassSectionLabel.ForeColor = System.Drawing.Color.Black;
-			this.selectTargetClassSectionLabel.Image = global::UnitTestGenerator.Properties.Resources.Target_Method_Label21;
-			this.selectTargetClassSectionLabel.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-			this.selectTargetClassSectionLabel.Location = new System.Drawing.Point(130, 15);
-			this.selectTargetClassSectionLabel.Name = "selectTargetClassSectionLabel";
-			this.selectTargetClassSectionLabel.Size = new System.Drawing.Size(191, 94);
-			this.selectTargetClassSectionLabel.TabIndex = 25;
-			this.selectTargetClassSectionLabel.Text = "Select Target C# Concrete Class Method";
-			this.selectTargetClassSectionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			selectTargetClassSectionLabel.FlatStyle = FlatStyle.Popup;
+			selectTargetClassSectionLabel.Font = new Font ("Candara", 18F, FontStyle.Underline, GraphicsUnit.Point);
+			selectTargetClassSectionLabel.ForeColor = Color.Black;
+			selectTargetClassSectionLabel.Image = Properties.Resources.Target_Method_Label21;
+			selectTargetClassSectionLabel.ImageAlign = ContentAlignment.TopRight;
+			selectTargetClassSectionLabel.Location = new Point (130, 15);
+			selectTargetClassSectionLabel.Name = "selectTargetClassSectionLabel";
+			selectTargetClassSectionLabel.Size = new Size (191, 94);
+			selectTargetClassSectionLabel.TabIndex = 25;
+			selectTargetClassSectionLabel.Text = "Select Target C# Concrete Class Method";
+			selectTargetClassSectionLabel.TextAlign = ContentAlignment.MiddleCenter;
 			// 
 			// concreteClassPictureBox
 			// 
-			this.concreteClassPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-			this.concreteClassPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("concreteClassPictureBox.Image")));
-			this.concreteClassPictureBox.InitialImage = global::UnitTestGenerator.Properties.Resources.Mock;
-			this.concreteClassPictureBox.Location = new System.Drawing.Point(15, 15);
-			this.concreteClassPictureBox.Name = "concreteClassPictureBox";
-			this.concreteClassPictureBox.Size = new System.Drawing.Size(98, 94);
-			this.concreteClassPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.concreteClassPictureBox.TabIndex = 24;
-			this.concreteClassPictureBox.TabStop = false;
+			concreteClassPictureBox.BackgroundImageLayout = ImageLayout.None;
+			concreteClassPictureBox.Image = (Image) resources.GetObject ("concreteClassPictureBox.Image");
+			concreteClassPictureBox.InitialImage = Properties.Resources.Mock;
+			concreteClassPictureBox.Location = new Point (15, 15);
+			concreteClassPictureBox.Name = "concreteClassPictureBox";
+			concreteClassPictureBox.Size = new Size (98, 94);
+			concreteClassPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+			concreteClassPictureBox.TabIndex = 24;
+			concreteClassPictureBox.TabStop = false;
 			// 
 			// generatedUnitTestsTabPage
 			// 
-			this.generatedUnitTestsTabPage.Controls.Add(this.panel7);
-			this.generatedUnitTestsTabPage.Location = new System.Drawing.Point(4, 29);
-			this.generatedUnitTestsTabPage.Name = "generatedUnitTestsTabPage";
-			this.generatedUnitTestsTabPage.Size = new System.Drawing.Size(1865, 970);
-			this.generatedUnitTestsTabPage.TabIndex = 2;
-			this.generatedUnitTestsTabPage.Text = "        Generated Unit Tests        ";
-			this.generatedUnitTestsTabPage.UseVisualStyleBackColor = true;
+			generatedUnitTestsTabPage.Controls.Add (panel7);
+			generatedUnitTestsTabPage.Location = new Point (4, 29);
+			generatedUnitTestsTabPage.Name = "generatedUnitTestsTabPage";
+			generatedUnitTestsTabPage.Size = new Size (1865, 970);
+			generatedUnitTestsTabPage.TabIndex = 2;
+			generatedUnitTestsTabPage.Text = "        Generated Unit Tests        ";
+			generatedUnitTestsTabPage.UseVisualStyleBackColor = true;
 			// 
 			// panel7
 			// 
-			this.panel7.BackColor = System.Drawing.Color.Silver;
-			this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.panel7.Controls.Add(this.selectedMethodsListBox);
-			this.panel7.Controls.Add(this.copyUnitTestCodeButton);
-			this.panel7.Controls.Add(this.saveUnitTestsButton);
-			this.panel7.Controls.Add(this.generatedUnitTestRichTextBox);
-			this.panel7.Location = new System.Drawing.Point(20, 22);
-			this.panel7.Name = "panel7";
-			this.panel7.Size = new System.Drawing.Size(1824, 924);
-			this.panel7.TabIndex = 8;
+			panel7.BackColor = Color.Silver;
+			panel7.BorderStyle = BorderStyle.Fixed3D;
+			panel7.Controls.Add (selectedMethodsListBox);
+			panel7.Controls.Add (copyUnitTestCodeButton);
+			panel7.Controls.Add (saveUnitTestsButton);
+			panel7.Controls.Add (generatedUnitTestRichTextBox);
+			panel7.Location = new Point (20, 22);
+			panel7.Name = "panel7";
+			panel7.Size = new Size (1824, 924);
+			panel7.TabIndex = 8;
 			// 
 			// selectedMethodsListBox
 			// 
-			this.selectedMethodsListBox.Font = new System.Drawing.Font("Cascadia Code SemiLight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.selectedMethodsListBox.FormattingEnabled = true;
-			this.selectedMethodsListBox.ItemHeight = 21;
-			this.selectedMethodsListBox.Location = new System.Drawing.Point(19, 19);
-			this.selectedMethodsListBox.Name = "selectedMethodsListBox";
-			this.selectedMethodsListBox.Size = new System.Drawing.Size(1781, 130);
-			this.selectedMethodsListBox.TabIndex = 36;
-			this.selectedMethodsListBox.SelectedIndexChanged += new System.EventHandler(this.selectedMethodsListBox_SelectedIndexChanged);
+			selectedMethodsListBox.Font = new Font ("Cascadia Code SemiLight", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			selectedMethodsListBox.FormattingEnabled = true;
+			selectedMethodsListBox.ItemHeight = 21;
+			selectedMethodsListBox.Location = new Point (19, 19);
+			selectedMethodsListBox.Name = "selectedMethodsListBox";
+			selectedMethodsListBox.Size = new Size (1781, 130);
+			selectedMethodsListBox.TabIndex = 36;
+			selectedMethodsListBox.SelectedIndexChanged += selectedMethodsListBox_SelectedIndexChanged;
 			// 
 			// copyUnitTestCodeButton
 			// 
-			this.copyUnitTestCodeButton.BackColor = System.Drawing.Color.Plum;
-			this.copyUnitTestCodeButton.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.copyUnitTestCodeButton.ForeColor = System.Drawing.Color.Black;
-			this.copyUnitTestCodeButton.Location = new System.Drawing.Point(1460, 836);
-			this.copyUnitTestCodeButton.Name = "copyUnitTestCodeButton";
-			this.copyUnitTestCodeButton.Size = new System.Drawing.Size(309, 52);
-			this.copyUnitTestCodeButton.TabIndex = 33;
-			this.copyUnitTestCodeButton.Text = "Copy Code";
-			this.copyUnitTestCodeButton.UseVisualStyleBackColor = false;
-			this.copyUnitTestCodeButton.Click += new System.EventHandler(this.copyUnitTestCodeButton_Click);
+			copyUnitTestCodeButton.BackColor = Color.Plum;
+			copyUnitTestCodeButton.Font = new Font ("Candara", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+			copyUnitTestCodeButton.ForeColor = Color.Black;
+			copyUnitTestCodeButton.Location = new Point (1460, 836);
+			copyUnitTestCodeButton.Name = "copyUnitTestCodeButton";
+			copyUnitTestCodeButton.Size = new Size (309, 52);
+			copyUnitTestCodeButton.TabIndex = 33;
+			copyUnitTestCodeButton.Text = "Copy Code";
+			copyUnitTestCodeButton.UseVisualStyleBackColor = false;
+			copyUnitTestCodeButton.Click += copyUnitTestCodeButton_Click;
 			// 
 			// saveUnitTestsButton
 			// 
-			this.saveUnitTestsButton.BackColor = System.Drawing.Color.Turquoise;
-			this.saveUnitTestsButton.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.saveUnitTestsButton.ForeColor = System.Drawing.Color.Black;
-			this.saveUnitTestsButton.Location = new System.Drawing.Point(1460, 778);
-			this.saveUnitTestsButton.Name = "saveUnitTestsButton";
-			this.saveUnitTestsButton.Size = new System.Drawing.Size(309, 52);
-			this.saveUnitTestsButton.TabIndex = 33;
-			this.saveUnitTestsButton.Text = "Save Unit Tests";
-			this.saveUnitTestsButton.UseVisualStyleBackColor = false;
-			this.saveUnitTestsButton.Click += new System.EventHandler(this.saveUnitTestsButton_Click);
+			saveUnitTestsButton.BackColor = Color.Turquoise;
+			saveUnitTestsButton.Font = new Font ("Candara", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+			saveUnitTestsButton.ForeColor = Color.Black;
+			saveUnitTestsButton.Location = new Point (1460, 778);
+			saveUnitTestsButton.Name = "saveUnitTestsButton";
+			saveUnitTestsButton.Size = new Size (309, 52);
+			saveUnitTestsButton.TabIndex = 33;
+			saveUnitTestsButton.Text = "Save Unit Tests";
+			saveUnitTestsButton.UseVisualStyleBackColor = false;
+			saveUnitTestsButton.Click += saveUnitTestsButton_Click;
 			// 
 			// generatedUnitTestRichTextBox
 			// 
-			this.generatedUnitTestRichTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-			this.generatedUnitTestRichTextBox.Font = new System.Drawing.Font("Cascadia Code SemiLight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.generatedUnitTestRichTextBox.ForeColor = System.Drawing.Color.White;
-			this.generatedUnitTestRichTextBox.Location = new System.Drawing.Point(19, 164);
-			this.generatedUnitTestRichTextBox.Name = "generatedUnitTestRichTextBox";
-			this.generatedUnitTestRichTextBox.Size = new System.Drawing.Size(1781, 736);
-			this.generatedUnitTestRichTextBox.TabIndex = 37;
-			this.generatedUnitTestRichTextBox.Text = "";
-			this.generatedUnitTestRichTextBox.WordWrap = false;
-			this.generatedUnitTestRichTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.generatedUnitTestRichTextBox_KeyDown);
+			generatedUnitTestRichTextBox.BackColor = Color.FromArgb (  30,   30,   30);
+			generatedUnitTestRichTextBox.Font = new Font ("Cascadia Code SemiLight", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			generatedUnitTestRichTextBox.ForeColor = Color.White;
+			generatedUnitTestRichTextBox.Location = new Point (19, 164);
+			generatedUnitTestRichTextBox.Name = "generatedUnitTestRichTextBox";
+			generatedUnitTestRichTextBox.Size = new Size (1781, 736);
+			generatedUnitTestRichTextBox.TabIndex = 37;
+			generatedUnitTestRichTextBox.Text = "";
+			generatedUnitTestRichTextBox.WordWrap = false;
+			generatedUnitTestRichTextBox.KeyDown += generatedUnitTestRichTextBox_KeyDown;
 			// 
 			// unitTestOptionsTabPage
 			// 
-			this.unitTestOptionsTabPage.BackColor = System.Drawing.Color.PaleTurquoise;
-			this.unitTestOptionsTabPage.Controls.Add(this.resetToDefaultOptionsButton);
-			this.unitTestOptionsTabPage.Controls.Add(this.rememberMyPreferencesCheckBox);
-			this.unitTestOptionsTabPage.Controls.Add(this.addFriendlyCommentsCheckBox);
-			this.unitTestOptionsTabPage.Controls.Add(this.addToDoStatementsCheckBox);
-			this.unitTestOptionsTabPage.Controls.Add(this.addAssertionForVoidDependencyCallsCheckBox);
-			this.unitTestOptionsTabPage.Controls.Add(this.addUsingNamespacesCheckBox);
-			this.unitTestOptionsTabPage.Controls.Add(this.panel5);
-			this.unitTestOptionsTabPage.Controls.Add(this.panel4);
-			this.unitTestOptionsTabPage.Controls.Add(this.panel3);
-			this.unitTestOptionsTabPage.Controls.Add(this.panel2);
-			this.unitTestOptionsTabPage.Controls.Add(this.panel1);
-			this.unitTestOptionsTabPage.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.unitTestOptionsTabPage.ForeColor = System.Drawing.Color.Gray;
-			this.unitTestOptionsTabPage.Location = new System.Drawing.Point(4, 29);
-			this.unitTestOptionsTabPage.Name = "unitTestOptionsTabPage";
-			this.unitTestOptionsTabPage.Padding = new System.Windows.Forms.Padding(3);
-			this.unitTestOptionsTabPage.Size = new System.Drawing.Size(1865, 970);
-			this.unitTestOptionsTabPage.TabIndex = 0;
-			this.unitTestOptionsTabPage.Text = "        Unit Test Platform Options        ";
+			unitTestOptionsTabPage.BackColor = Color.PaleTurquoise;
+			unitTestOptionsTabPage.Controls.Add (resetToDefaultOptionsButton);
+			unitTestOptionsTabPage.Controls.Add (rememberMyPreferencesCheckBox);
+			unitTestOptionsTabPage.Controls.Add (addFriendlyCommentsCheckBox);
+			unitTestOptionsTabPage.Controls.Add (addToDoStatementsCheckBox);
+			unitTestOptionsTabPage.Controls.Add (addAssertionForVoidDependencyCallsCheckBox);
+			unitTestOptionsTabPage.Controls.Add (addUsingNamespacesCheckBox);
+			unitTestOptionsTabPage.Controls.Add (panel5);
+			unitTestOptionsTabPage.Controls.Add (panel4);
+			unitTestOptionsTabPage.Controls.Add (panel3);
+			unitTestOptionsTabPage.Controls.Add (panel2);
+			unitTestOptionsTabPage.Controls.Add (panel1);
+			unitTestOptionsTabPage.Font = new Font ("Candara", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			unitTestOptionsTabPage.ForeColor = Color.Gray;
+			unitTestOptionsTabPage.Location = new Point (4, 29);
+			unitTestOptionsTabPage.Name = "unitTestOptionsTabPage";
+			unitTestOptionsTabPage.Padding = new Padding (3);
+			unitTestOptionsTabPage.Size = new Size (1865, 970);
+			unitTestOptionsTabPage.TabIndex = 0;
+			unitTestOptionsTabPage.Text = "        Unit Test Platform Options        ";
 			// 
 			// resetToDefaultOptionsButton
 			// 
-			this.resetToDefaultOptionsButton.BackColor = System.Drawing.Color.MediumVioletRed;
-			this.resetToDefaultOptionsButton.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.resetToDefaultOptionsButton.ForeColor = System.Drawing.Color.White;
-			this.resetToDefaultOptionsButton.Location = new System.Drawing.Point(20, 575);
-			this.resetToDefaultOptionsButton.Name = "resetToDefaultOptionsButton";
-			this.resetToDefaultOptionsButton.Size = new System.Drawing.Size(385, 50);
-			this.resetToDefaultOptionsButton.TabIndex = 34;
-			this.resetToDefaultOptionsButton.Text = "Reset to Default Options";
-			this.resetToDefaultOptionsButton.UseVisualStyleBackColor = false;
-			this.resetToDefaultOptionsButton.Click += new System.EventHandler(this.resetToDefaultOptionsButton_Click);
+			resetToDefaultOptionsButton.BackColor = Color.MediumVioletRed;
+			resetToDefaultOptionsButton.Font = new Font ("Candara", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+			resetToDefaultOptionsButton.ForeColor = Color.White;
+			resetToDefaultOptionsButton.Location = new Point (20, 575);
+			resetToDefaultOptionsButton.Name = "resetToDefaultOptionsButton";
+			resetToDefaultOptionsButton.Size = new Size (385, 50);
+			resetToDefaultOptionsButton.TabIndex = 34;
+			resetToDefaultOptionsButton.Text = "Reset to Default Options";
+			resetToDefaultOptionsButton.UseVisualStyleBackColor = false;
+			resetToDefaultOptionsButton.Click += resetToDefaultOptionsButton_Click;
 			// 
 			// rememberMyPreferencesCheckBox
 			// 
-			this.rememberMyPreferencesCheckBox.AutoSize = true;
-			this.rememberMyPreferencesCheckBox.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.rememberMyPreferencesCheckBox.Location = new System.Drawing.Point(20, 922);
-			this.rememberMyPreferencesCheckBox.Name = "rememberMyPreferencesCheckBox";
-			this.rememberMyPreferencesCheckBox.Size = new System.Drawing.Size(212, 23);
-			this.rememberMyPreferencesCheckBox.TabIndex = 8;
-			this.rememberMyPreferencesCheckBox.Text = "Remember my preferences";
-			this.rememberMyPreferencesCheckBox.UseVisualStyleBackColor = true;
+			rememberMyPreferencesCheckBox.AutoSize = true;
+			rememberMyPreferencesCheckBox.Font = new Font ("Candara", 12F, FontStyle.Bold, GraphicsUnit.Point);
+			rememberMyPreferencesCheckBox.Location = new Point (20, 922);
+			rememberMyPreferencesCheckBox.Name = "rememberMyPreferencesCheckBox";
+			rememberMyPreferencesCheckBox.Size = new Size (212, 23);
+			rememberMyPreferencesCheckBox.TabIndex = 8;
+			rememberMyPreferencesCheckBox.Text = "Remember my preferences";
+			rememberMyPreferencesCheckBox.UseVisualStyleBackColor = true;
 			// 
 			// addFriendlyCommentsCheckBox
 			// 
-			this.addFriendlyCommentsCheckBox.AutoSize = true;
-			this.addFriendlyCommentsCheckBox.Checked = true;
-			this.addFriendlyCommentsCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
-			this.addFriendlyCommentsCheckBox.ForeColor = System.Drawing.Color.Black;
-			this.addFriendlyCommentsCheckBox.Location = new System.Drawing.Point(1050, 540);
-			this.addFriendlyCommentsCheckBox.Name = "addFriendlyCommentsCheckBox";
-			this.addFriendlyCommentsCheckBox.Size = new System.Drawing.Size(256, 23);
-			this.addFriendlyCommentsCheckBox.TabIndex = 7;
-			this.addFriendlyCommentsCheckBox.Text = "Add friendly single-line comments";
-			this.addFriendlyCommentsCheckBox.UseVisualStyleBackColor = true;
-			this.addFriendlyCommentsCheckBox.CheckedChanged += new System.EventHandler(this.addFriendlyCommentsCheckBox_CheckedChanged);
+			addFriendlyCommentsCheckBox.AutoSize = true;
+			addFriendlyCommentsCheckBox.Checked = true;
+			addFriendlyCommentsCheckBox.CheckState = CheckState.Checked;
+			addFriendlyCommentsCheckBox.ForeColor = Color.Black;
+			addFriendlyCommentsCheckBox.Location = new Point (1050, 540);
+			addFriendlyCommentsCheckBox.Name = "addFriendlyCommentsCheckBox";
+			addFriendlyCommentsCheckBox.Size = new Size (256, 23);
+			addFriendlyCommentsCheckBox.TabIndex = 7;
+			addFriendlyCommentsCheckBox.Text = "Add friendly single-line comments";
+			addFriendlyCommentsCheckBox.UseVisualStyleBackColor = true;
+			addFriendlyCommentsCheckBox.CheckedChanged += addFriendlyCommentsCheckBox_CheckedChanged;
 			// 
 			// addToDoStatementsCheckBox
 			// 
-			this.addToDoStatementsCheckBox.AutoSize = true;
-			this.addToDoStatementsCheckBox.Checked = true;
-			this.addToDoStatementsCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
-			this.addToDoStatementsCheckBox.ForeColor = System.Drawing.Color.Black;
-			this.addToDoStatementsCheckBox.Location = new System.Drawing.Point(1050, 505);
-			this.addToDoStatementsCheckBox.Name = "addToDoStatementsCheckBox";
-			this.addToDoStatementsCheckBox.Size = new System.Drawing.Size(399, 23);
-			this.addToDoStatementsCheckBox.TabIndex = 7;
-			this.addToDoStatementsCheckBox.Text = "Add \'// TODO: \' comments that instruct what to do next";
-			this.addToDoStatementsCheckBox.UseVisualStyleBackColor = true;
-			this.addToDoStatementsCheckBox.CheckedChanged += new System.EventHandler(this.addToDoStatementsCheckBox_CheckedChanged);
+			addToDoStatementsCheckBox.AutoSize = true;
+			addToDoStatementsCheckBox.Checked = true;
+			addToDoStatementsCheckBox.CheckState = CheckState.Checked;
+			addToDoStatementsCheckBox.ForeColor = Color.Black;
+			addToDoStatementsCheckBox.Location = new Point (1050, 505);
+			addToDoStatementsCheckBox.Name = "addToDoStatementsCheckBox";
+			addToDoStatementsCheckBox.Size = new Size (399, 23);
+			addToDoStatementsCheckBox.TabIndex = 7;
+			addToDoStatementsCheckBox.Text = "Add '// TODO: ' comments that instruct what to do next";
+			addToDoStatementsCheckBox.UseVisualStyleBackColor = true;
+			addToDoStatementsCheckBox.CheckedChanged += addToDoStatementsCheckBox_CheckedChanged;
 			// 
 			// addAssertionForVoidDependencyCallsCheckBox
 			// 
-			this.addAssertionForVoidDependencyCallsCheckBox.AutoSize = true;
-			this.addAssertionForVoidDependencyCallsCheckBox.Checked = true;
-			this.addAssertionForVoidDependencyCallsCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
-			this.addAssertionForVoidDependencyCallsCheckBox.ForeColor = System.Drawing.Color.Black;
-			this.addAssertionForVoidDependencyCallsCheckBox.Location = new System.Drawing.Point(1050, 435);
-			this.addAssertionForVoidDependencyCallsCheckBox.Name = "addAssertionForVoidDependencyCallsCheckBox";
-			this.addAssertionForVoidDependencyCallsCheckBox.Size = new System.Drawing.Size(442, 23);
-			this.addAssertionForVoidDependencyCallsCheckBox.TabIndex = 7;
-			this.addAssertionForVoidDependencyCallsCheckBox.Text = "Add assertion statements for \'void\' dependency method calls";
-			this.addAssertionForVoidDependencyCallsCheckBox.UseVisualStyleBackColor = true;
-			this.addAssertionForVoidDependencyCallsCheckBox.CheckedChanged += new System.EventHandler(this.addAssertionForVoidDependencyCallsCheckBox_CheckedChanged);
+			addAssertionForVoidDependencyCallsCheckBox.AutoSize = true;
+			addAssertionForVoidDependencyCallsCheckBox.Checked = true;
+			addAssertionForVoidDependencyCallsCheckBox.CheckState = CheckState.Checked;
+			addAssertionForVoidDependencyCallsCheckBox.ForeColor = Color.Black;
+			addAssertionForVoidDependencyCallsCheckBox.Location = new Point (1050, 435);
+			addAssertionForVoidDependencyCallsCheckBox.Name = "addAssertionForVoidDependencyCallsCheckBox";
+			addAssertionForVoidDependencyCallsCheckBox.Size = new Size (442, 23);
+			addAssertionForVoidDependencyCallsCheckBox.TabIndex = 7;
+			addAssertionForVoidDependencyCallsCheckBox.Text = "Add assertion statements for 'void' dependency method calls";
+			addAssertionForVoidDependencyCallsCheckBox.UseVisualStyleBackColor = true;
+			addAssertionForVoidDependencyCallsCheckBox.CheckedChanged += addAssertionForVoidDependencyCallsCheckBox_CheckedChanged;
 			// 
 			// addUsingNamespacesCheckBox
 			// 
-			this.addUsingNamespacesCheckBox.AutoSize = true;
-			this.addUsingNamespacesCheckBox.Checked = true;
-			this.addUsingNamespacesCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
-			this.addUsingNamespacesCheckBox.ForeColor = System.Drawing.Color.Black;
-			this.addUsingNamespacesCheckBox.Location = new System.Drawing.Point(1050, 470);
-			this.addUsingNamespacesCheckBox.Name = "addUsingNamespacesCheckBox";
-			this.addUsingNamespacesCheckBox.Size = new System.Drawing.Size(438, 23);
-			this.addUsingNamespacesCheckBox.TabIndex = 7;
-			this.addUsingNamespacesCheckBox.Text = "Add library \'using &Namespaces;\' statements, even if not used";
-			this.addUsingNamespacesCheckBox.UseVisualStyleBackColor = true;
-			this.addUsingNamespacesCheckBox.CheckedChanged += new System.EventHandler(this.addNamespacesCheckBox_CheckedChanged);
+			addUsingNamespacesCheckBox.AutoSize = true;
+			addUsingNamespacesCheckBox.Checked = true;
+			addUsingNamespacesCheckBox.CheckState = CheckState.Checked;
+			addUsingNamespacesCheckBox.ForeColor = Color.Black;
+			addUsingNamespacesCheckBox.Location = new Point (1050, 470);
+			addUsingNamespacesCheckBox.Name = "addUsingNamespacesCheckBox";
+			addUsingNamespacesCheckBox.Size = new Size (438, 23);
+			addUsingNamespacesCheckBox.TabIndex = 7;
+			addUsingNamespacesCheckBox.Text = "Add library 'using &Namespaces;' statements, even if not used";
+			addUsingNamespacesCheckBox.UseVisualStyleBackColor = true;
+			addUsingNamespacesCheckBox.CheckedChanged += addNamespacesCheckBox_CheckedChanged;
 			// 
 			// panel5
 			// 
-			this.panel5.BackColor = System.Drawing.Color.Silver;
-			this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.panel5.Controls.Add(this.utMethodNameStartsWithWhenRadioButton);
-			this.panel5.Controls.Add(this.utMethodNameStartsWithShouldRadioButton);
-			this.panel5.Controls.Add(this.utMethodNamingStyleHighlighterLabel);
-			this.panel5.Controls.Add(this.unitTestMethodNamingStyleSectionLabel);
-			this.panel5.Location = new System.Drawing.Point(20, 435);
-			this.panel5.Name = "panel5";
-			this.panel5.Size = new System.Drawing.Size(1000, 127);
-			this.panel5.TabIndex = 6;
+			panel5.BackColor = Color.Silver;
+			panel5.BorderStyle = BorderStyle.Fixed3D;
+			panel5.Controls.Add (utMethodNameStartsWithWhenRadioButton);
+			panel5.Controls.Add (utMethodNameStartsWithShouldRadioButton);
+			panel5.Controls.Add (utMethodNamingStyleHighlighterLabel);
+			panel5.Controls.Add (unitTestMethodNamingStyleSectionLabel);
+			panel5.Location = new Point (20, 435);
+			panel5.Name = "panel5";
+			panel5.Size = new Size (1000, 127);
+			panel5.TabIndex = 6;
 			// 
 			// utMethodNameStartsWithWhenRadioButton
 			// 
-			this.utMethodNameStartsWithWhenRadioButton.AutoSize = true;
-			this.utMethodNameStartsWithWhenRadioButton.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.utMethodNameStartsWithWhenRadioButton.ForeColor = System.Drawing.Color.Black;
-			this.utMethodNameStartsWithWhenRadioButton.Location = new System.Drawing.Point(260, 75);
-			this.utMethodNameStartsWithWhenRadioButton.Name = "utMethodNameStartsWithWhenRadioButton";
-			this.utMethodNameStartsWithWhenRadioButton.Size = new System.Drawing.Size(469, 25);
-			this.utMethodNameStartsWithWhenRadioButton.TabIndex = 9;
-			this.utMethodNameStartsWithWhenRadioButton.TabStop = true;
-			this.utMethodNameStartsWithWhenRadioButton.Text = "public void WhenListIsEmpty_ItShouldReturnTrue ()";
-			this.utMethodNameStartsWithWhenRadioButton.UseVisualStyleBackColor = true;
-			this.utMethodNameStartsWithWhenRadioButton.CheckedChanged += new System.EventHandler(this.utMethodNameStartsWithWhenRadioButton_CheckedChanged);
+			utMethodNameStartsWithWhenRadioButton.AutoSize = true;
+			utMethodNameStartsWithWhenRadioButton.Font = new Font ("Cascadia Code", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			utMethodNameStartsWithWhenRadioButton.ForeColor = Color.Black;
+			utMethodNameStartsWithWhenRadioButton.Location = new Point (260, 75);
+			utMethodNameStartsWithWhenRadioButton.Name = "utMethodNameStartsWithWhenRadioButton";
+			utMethodNameStartsWithWhenRadioButton.Size = new Size (469, 25);
+			utMethodNameStartsWithWhenRadioButton.TabIndex = 9;
+			utMethodNameStartsWithWhenRadioButton.TabStop = true;
+			utMethodNameStartsWithWhenRadioButton.Text = "public void WhenListIsEmpty_ItShouldReturnTrue ()";
+			utMethodNameStartsWithWhenRadioButton.UseVisualStyleBackColor = true;
+			utMethodNameStartsWithWhenRadioButton.CheckedChanged += utMethodNameStartsWithWhenRadioButton_CheckedChanged;
 			// 
 			// utMethodNameStartsWithShouldRadioButton
 			// 
-			this.utMethodNameStartsWithShouldRadioButton.AutoSize = true;
-			this.utMethodNameStartsWithShouldRadioButton.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.utMethodNameStartsWithShouldRadioButton.ForeColor = System.Drawing.Color.Black;
-			this.utMethodNameStartsWithShouldRadioButton.Location = new System.Drawing.Point(260, 30);
-			this.utMethodNameStartsWithShouldRadioButton.Name = "utMethodNameStartsWithShouldRadioButton";
-			this.utMethodNameStartsWithShouldRadioButton.Size = new System.Drawing.Size(433, 25);
-			this.utMethodNameStartsWithShouldRadioButton.TabIndex = 10;
-			this.utMethodNameStartsWithShouldRadioButton.TabStop = true;
-			this.utMethodNameStartsWithShouldRadioButton.Text = "public void ShouldReturnTrue_IfListIsEmpty ()";
-			this.utMethodNameStartsWithShouldRadioButton.UseVisualStyleBackColor = true;
-			this.utMethodNameStartsWithShouldRadioButton.CheckedChanged += new System.EventHandler(this.utMethodNameStartsWithShouldRadioButton_CheckedChanged);
+			utMethodNameStartsWithShouldRadioButton.AutoSize = true;
+			utMethodNameStartsWithShouldRadioButton.Font = new Font ("Cascadia Code", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			utMethodNameStartsWithShouldRadioButton.ForeColor = Color.Black;
+			utMethodNameStartsWithShouldRadioButton.Location = new Point (260, 30);
+			utMethodNameStartsWithShouldRadioButton.Name = "utMethodNameStartsWithShouldRadioButton";
+			utMethodNameStartsWithShouldRadioButton.Size = new Size (433, 25);
+			utMethodNameStartsWithShouldRadioButton.TabIndex = 10;
+			utMethodNameStartsWithShouldRadioButton.TabStop = true;
+			utMethodNameStartsWithShouldRadioButton.Text = "public void ShouldReturnTrue_IfListIsEmpty ()";
+			utMethodNameStartsWithShouldRadioButton.UseVisualStyleBackColor = true;
+			utMethodNameStartsWithShouldRadioButton.CheckedChanged += utMethodNameStartsWithShouldRadioButton_CheckedChanged;
 			// 
 			// utMethodNamingStyleHighlighterLabel
 			// 
-			this.utMethodNamingStyleHighlighterLabel.BackColor = System.Drawing.Color.Yellow;
-			this.utMethodNamingStyleHighlighterLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.utMethodNamingStyleHighlighterLabel.Location = new System.Drawing.Point(250, 20);
-			this.utMethodNamingStyleHighlighterLabel.Name = "utMethodNamingStyleHighlighterLabel";
-			this.utMethodNamingStyleHighlighterLabel.Size = new System.Drawing.Size(730, 45);
-			this.utMethodNamingStyleHighlighterLabel.TabIndex = 11;
+			utMethodNamingStyleHighlighterLabel.BackColor = Color.Yellow;
+			utMethodNamingStyleHighlighterLabel.BorderStyle = BorderStyle.FixedSingle;
+			utMethodNamingStyleHighlighterLabel.Location = new Point (250, 20);
+			utMethodNamingStyleHighlighterLabel.Name = "utMethodNamingStyleHighlighterLabel";
+			utMethodNamingStyleHighlighterLabel.Size = new Size (730, 45);
+			utMethodNamingStyleHighlighterLabel.TabIndex = 11;
 			// 
 			// unitTestMethodNamingStyleSectionLabel
 			// 
-			this.unitTestMethodNamingStyleSectionLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-			this.unitTestMethodNamingStyleSectionLabel.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.unitTestMethodNamingStyleSectionLabel.ForeColor = System.Drawing.Color.Black;
-			this.unitTestMethodNamingStyleSectionLabel.Image = ((System.Drawing.Image)(resources.GetObject("unitTestMethodNamingStyleSectionLabel.Image")));
-			this.unitTestMethodNamingStyleSectionLabel.Location = new System.Drawing.Point(15, 15);
-			this.unitTestMethodNamingStyleSectionLabel.Name = "unitTestMethodNamingStyleSectionLabel";
-			this.unitTestMethodNamingStyleSectionLabel.Size = new System.Drawing.Size(221, 94);
-			this.unitTestMethodNamingStyleSectionLabel.TabIndex = 8;
-			this.unitTestMethodNamingStyleSectionLabel.Text = "Unit Test Method Naming Style";
-			this.unitTestMethodNamingStyleSectionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			unitTestMethodNamingStyleSectionLabel.FlatStyle = FlatStyle.Popup;
+			unitTestMethodNamingStyleSectionLabel.Font = new Font ("Candara", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+			unitTestMethodNamingStyleSectionLabel.ForeColor = Color.Black;
+			unitTestMethodNamingStyleSectionLabel.Image = (Image) resources.GetObject ("unitTestMethodNamingStyleSectionLabel.Image");
+			unitTestMethodNamingStyleSectionLabel.Location = new Point (15, 15);
+			unitTestMethodNamingStyleSectionLabel.Name = "unitTestMethodNamingStyleSectionLabel";
+			unitTestMethodNamingStyleSectionLabel.Size = new Size (221, 94);
+			unitTestMethodNamingStyleSectionLabel.TabIndex = 8;
+			unitTestMethodNamingStyleSectionLabel.Text = "Unit Test Method Naming Style";
+			unitTestMethodNamingStyleSectionLabel.TextAlign = ContentAlignment.MiddleCenter;
 			// 
 			// panel4
 			// 
-			this.panel4.BackColor = System.Drawing.Color.Silver;
-			this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.panel4.Controls.Add(this.testData5RadioButton);
-			this.panel4.Controls.Add(this.testData4RadioButton);
-			this.panel4.Controls.Add(this.testData3RadioButton);
-			this.panel4.Controls.Add(this.autoFixtureRadioButton);
-			this.panel4.Controls.Add(this.nBuilderRadioButton);
-			this.panel4.Controls.Add(this.testDataPrepLibraryHighlighterLabel);
-			this.panel4.Controls.Add(this.testDataPrepLibraryPictureBox);
-			this.panel4.Controls.Add(this.testDataPrepLibrarySectionLabel);
-			this.panel4.Location = new System.Drawing.Point(1160, 20);
-			this.panel4.Name = "panel4";
-			this.panel4.Size = new System.Drawing.Size(360, 395);
-			this.panel4.TabIndex = 6;
+			panel4.BackColor = Color.Silver;
+			panel4.BorderStyle = BorderStyle.Fixed3D;
+			panel4.Controls.Add (testData5RadioButton);
+			panel4.Controls.Add (testData4RadioButton);
+			panel4.Controls.Add (testData3RadioButton);
+			panel4.Controls.Add (autoFixtureRadioButton);
+			panel4.Controls.Add (nBuilderRadioButton);
+			panel4.Controls.Add (testDataPrepLibraryHighlighterLabel);
+			panel4.Controls.Add (testDataPrepLibraryPictureBox);
+			panel4.Controls.Add (testDataPrepLibrarySectionLabel);
+			panel4.Location = new Point (1160, 20);
+			panel4.Name = "panel4";
+			panel4.Size = new Size (360, 395);
+			panel4.TabIndex = 6;
 			// 
 			// testData5RadioButton
 			// 
-			this.testData5RadioButton.AutoSize = true;
-			this.testData5RadioButton.Enabled = false;
-			this.testData5RadioButton.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.testData5RadioButton.ForeColor = System.Drawing.Color.Black;
-			this.testData5RadioButton.Location = new System.Drawing.Point(25, 340);
-			this.testData5RadioButton.Name = "testData5RadioButton";
-			this.testData5RadioButton.Size = new System.Drawing.Size(136, 25);
-			this.testData5RadioButton.TabIndex = 25;
-			this.testData5RadioButton.TabStop = true;
-			this.testData5RadioButton.Text = "(Yet to add)";
-			this.testData5RadioButton.UseVisualStyleBackColor = true;
-			this.testData5RadioButton.CheckedChanged += new System.EventHandler(this.testDataFrameworkChanged);
+			testData5RadioButton.AutoSize = true;
+			testData5RadioButton.Enabled = false;
+			testData5RadioButton.Font = new Font ("Cascadia Code", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			testData5RadioButton.ForeColor = Color.Black;
+			testData5RadioButton.Location = new Point (25, 340);
+			testData5RadioButton.Name = "testData5RadioButton";
+			testData5RadioButton.Size = new Size (136, 25);
+			testData5RadioButton.TabIndex = 25;
+			testData5RadioButton.TabStop = true;
+			testData5RadioButton.Text = "(Yet to add)";
+			testData5RadioButton.UseVisualStyleBackColor = true;
+			testData5RadioButton.CheckedChanged += testDataFrameworkChanged;
 			// 
 			// testData4RadioButton
 			// 
-			this.testData4RadioButton.AutoSize = true;
-			this.testData4RadioButton.Enabled = false;
-			this.testData4RadioButton.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.testData4RadioButton.ForeColor = System.Drawing.Color.Black;
-			this.testData4RadioButton.Location = new System.Drawing.Point(25, 290);
-			this.testData4RadioButton.Name = "testData4RadioButton";
-			this.testData4RadioButton.Size = new System.Drawing.Size(136, 25);
-			this.testData4RadioButton.TabIndex = 26;
-			this.testData4RadioButton.TabStop = true;
-			this.testData4RadioButton.Text = "(Yet to add)";
-			this.testData4RadioButton.UseVisualStyleBackColor = true;
-			this.testData4RadioButton.CheckedChanged += new System.EventHandler(this.testDataFrameworkChanged);
+			testData4RadioButton.AutoSize = true;
+			testData4RadioButton.Enabled = false;
+			testData4RadioButton.Font = new Font ("Cascadia Code", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			testData4RadioButton.ForeColor = Color.Black;
+			testData4RadioButton.Location = new Point (25, 290);
+			testData4RadioButton.Name = "testData4RadioButton";
+			testData4RadioButton.Size = new Size (136, 25);
+			testData4RadioButton.TabIndex = 26;
+			testData4RadioButton.TabStop = true;
+			testData4RadioButton.Text = "(Yet to add)";
+			testData4RadioButton.UseVisualStyleBackColor = true;
+			testData4RadioButton.CheckedChanged += testDataFrameworkChanged;
 			// 
 			// testData3RadioButton
 			// 
-			this.testData3RadioButton.AutoSize = true;
-			this.testData3RadioButton.Enabled = false;
-			this.testData3RadioButton.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.testData3RadioButton.ForeColor = System.Drawing.Color.Black;
-			this.testData3RadioButton.Location = new System.Drawing.Point(25, 240);
-			this.testData3RadioButton.Name = "testData3RadioButton";
-			this.testData3RadioButton.Size = new System.Drawing.Size(136, 25);
-			this.testData3RadioButton.TabIndex = 27;
-			this.testData3RadioButton.TabStop = true;
-			this.testData3RadioButton.Text = "(Yet to add)";
-			this.testData3RadioButton.UseVisualStyleBackColor = true;
-			this.testData3RadioButton.CheckedChanged += new System.EventHandler(this.testDataFrameworkChanged);
+			testData3RadioButton.AutoSize = true;
+			testData3RadioButton.Enabled = false;
+			testData3RadioButton.Font = new Font ("Cascadia Code", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			testData3RadioButton.ForeColor = Color.Black;
+			testData3RadioButton.Location = new Point (25, 240);
+			testData3RadioButton.Name = "testData3RadioButton";
+			testData3RadioButton.Size = new Size (136, 25);
+			testData3RadioButton.TabIndex = 27;
+			testData3RadioButton.TabStop = true;
+			testData3RadioButton.Text = "(Yet to add)";
+			testData3RadioButton.UseVisualStyleBackColor = true;
+			testData3RadioButton.CheckedChanged += testDataFrameworkChanged;
 			// 
 			// autoFixtureRadioButton
 			// 
-			this.autoFixtureRadioButton.AutoSize = true;
-			this.autoFixtureRadioButton.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.autoFixtureRadioButton.ForeColor = System.Drawing.Color.Black;
-			this.autoFixtureRadioButton.Location = new System.Drawing.Point(25, 190);
-			this.autoFixtureRadioButton.Name = "autoFixtureRadioButton";
-			this.autoFixtureRadioButton.Size = new System.Drawing.Size(127, 25);
-			this.autoFixtureRadioButton.TabIndex = 28;
-			this.autoFixtureRadioButton.TabStop = true;
-			this.autoFixtureRadioButton.Text = "AutoFixture";
-			this.autoFixtureRadioButton.UseVisualStyleBackColor = true;
-			this.autoFixtureRadioButton.CheckedChanged += new System.EventHandler(this.testDataFrameworkChanged);
+			autoFixtureRadioButton.AutoSize = true;
+			autoFixtureRadioButton.Font = new Font ("Cascadia Code", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			autoFixtureRadioButton.ForeColor = Color.Black;
+			autoFixtureRadioButton.Location = new Point (25, 190);
+			autoFixtureRadioButton.Name = "autoFixtureRadioButton";
+			autoFixtureRadioButton.Size = new Size (127, 25);
+			autoFixtureRadioButton.TabIndex = 28;
+			autoFixtureRadioButton.TabStop = true;
+			autoFixtureRadioButton.Text = "AutoFixture";
+			autoFixtureRadioButton.UseVisualStyleBackColor = true;
+			autoFixtureRadioButton.CheckedChanged += testDataFrameworkChanged;
 			// 
 			// nBuilderRadioButton
 			// 
-			this.nBuilderRadioButton.AutoSize = true;
-			this.nBuilderRadioButton.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.nBuilderRadioButton.ForeColor = System.Drawing.Color.Black;
-			this.nBuilderRadioButton.Location = new System.Drawing.Point(25, 140);
-			this.nBuilderRadioButton.Name = "nBuilderRadioButton";
-			this.nBuilderRadioButton.Size = new System.Drawing.Size(181, 25);
-			this.nBuilderRadioButton.TabIndex = 29;
-			this.nBuilderRadioButton.TabStop = true;
-			this.nBuilderRadioButton.Text = "Fizzware NBuilder";
-			this.nBuilderRadioButton.UseVisualStyleBackColor = true;
-			this.nBuilderRadioButton.CheckedChanged += new System.EventHandler(this.testDataFrameworkChanged);
+			nBuilderRadioButton.AutoSize = true;
+			nBuilderRadioButton.Font = new Font ("Cascadia Code", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			nBuilderRadioButton.ForeColor = Color.Black;
+			nBuilderRadioButton.Location = new Point (25, 140);
+			nBuilderRadioButton.Name = "nBuilderRadioButton";
+			nBuilderRadioButton.Size = new Size (181, 25);
+			nBuilderRadioButton.TabIndex = 29;
+			nBuilderRadioButton.TabStop = true;
+			nBuilderRadioButton.Text = "Fizzware NBuilder";
+			nBuilderRadioButton.UseVisualStyleBackColor = true;
+			nBuilderRadioButton.CheckedChanged += testDataFrameworkChanged;
 			// 
 			// testDataPrepLibraryHighlighterLabel
 			// 
-			this.testDataPrepLibraryHighlighterLabel.BackColor = System.Drawing.Color.Yellow;
-			this.testDataPrepLibraryHighlighterLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.testDataPrepLibraryHighlighterLabel.ForeColor = System.Drawing.Color.White;
-			this.testDataPrepLibraryHighlighterLabel.Location = new System.Drawing.Point(15, 130);
-			this.testDataPrepLibraryHighlighterLabel.Name = "testDataPrepLibraryHighlighterLabel";
-			this.testDataPrepLibraryHighlighterLabel.Size = new System.Drawing.Size(327, 45);
-			this.testDataPrepLibraryHighlighterLabel.TabIndex = 30;
+			testDataPrepLibraryHighlighterLabel.BackColor = Color.Yellow;
+			testDataPrepLibraryHighlighterLabel.BorderStyle = BorderStyle.FixedSingle;
+			testDataPrepLibraryHighlighterLabel.ForeColor = Color.White;
+			testDataPrepLibraryHighlighterLabel.Location = new Point (15, 130);
+			testDataPrepLibraryHighlighterLabel.Name = "testDataPrepLibraryHighlighterLabel";
+			testDataPrepLibraryHighlighterLabel.Size = new Size (327, 45);
+			testDataPrepLibraryHighlighterLabel.TabIndex = 30;
 			// 
 			// testDataPrepLibraryPictureBox
 			// 
-			this.testDataPrepLibraryPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-			this.testDataPrepLibraryPictureBox.Image = global::UnitTestGenerator.Properties.Resources.Test_Data;
-			this.testDataPrepLibraryPictureBox.InitialImage = global::UnitTestGenerator.Properties.Resources.Mock;
-			this.testDataPrepLibraryPictureBox.Location = new System.Drawing.Point(15, 15);
-			this.testDataPrepLibraryPictureBox.Name = "testDataPrepLibraryPictureBox";
-			this.testDataPrepLibraryPictureBox.Size = new System.Drawing.Size(100, 100);
-			this.testDataPrepLibraryPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.testDataPrepLibraryPictureBox.TabIndex = 24;
-			this.testDataPrepLibraryPictureBox.TabStop = false;
+			testDataPrepLibraryPictureBox.BackgroundImageLayout = ImageLayout.None;
+			testDataPrepLibraryPictureBox.Image = Properties.Resources.Test_Data;
+			testDataPrepLibraryPictureBox.InitialImage = Properties.Resources.Mock;
+			testDataPrepLibraryPictureBox.Location = new Point (15, 15);
+			testDataPrepLibraryPictureBox.Name = "testDataPrepLibraryPictureBox";
+			testDataPrepLibraryPictureBox.Size = new Size (100, 100);
+			testDataPrepLibraryPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+			testDataPrepLibraryPictureBox.TabIndex = 24;
+			testDataPrepLibraryPictureBox.TabStop = false;
 			// 
 			// testDataPrepLibrarySectionLabel
 			// 
-			this.testDataPrepLibrarySectionLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-			this.testDataPrepLibrarySectionLabel.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.testDataPrepLibrarySectionLabel.ForeColor = System.Drawing.Color.Transparent;
-			this.testDataPrepLibrarySectionLabel.Image = ((System.Drawing.Image)(resources.GetObject("testDataPrepLibrarySectionLabel.Image")));
-			this.testDataPrepLibrarySectionLabel.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-			this.testDataPrepLibrarySectionLabel.Location = new System.Drawing.Point(130, 15);
-			this.testDataPrepLibrarySectionLabel.Margin = new System.Windows.Forms.Padding(0);
-			this.testDataPrepLibrarySectionLabel.Name = "testDataPrepLibrarySectionLabel";
-			this.testDataPrepLibrarySectionLabel.Size = new System.Drawing.Size(210, 100);
-			this.testDataPrepLibrarySectionLabel.TabIndex = 8;
-			this.testDataPrepLibrarySectionLabel.Text = "Test Data Preparation Library";
-			this.testDataPrepLibrarySectionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			testDataPrepLibrarySectionLabel.FlatStyle = FlatStyle.Popup;
+			testDataPrepLibrarySectionLabel.Font = new Font ("Candara", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+			testDataPrepLibrarySectionLabel.ForeColor = Color.Transparent;
+			testDataPrepLibrarySectionLabel.Image = (Image) resources.GetObject ("testDataPrepLibrarySectionLabel.Image");
+			testDataPrepLibrarySectionLabel.ImageAlign = ContentAlignment.TopRight;
+			testDataPrepLibrarySectionLabel.Location = new Point (130, 15);
+			testDataPrepLibrarySectionLabel.Margin = new Padding (0);
+			testDataPrepLibrarySectionLabel.Name = "testDataPrepLibrarySectionLabel";
+			testDataPrepLibrarySectionLabel.Size = new Size (210, 100);
+			testDataPrepLibrarySectionLabel.TabIndex = 8;
+			testDataPrepLibrarySectionLabel.Text = "Test Data Preparation Library";
+			testDataPrepLibrarySectionLabel.TextAlign = ContentAlignment.MiddleCenter;
 			// 
 			// panel3
 			// 
-			this.panel3.BackColor = System.Drawing.Color.Silver;
-			this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.panel3.Controls.Add(this.nSureRadioButton);
-			this.panel3.Controls.Add(this.nFluentRadioButton);
-			this.panel3.Controls.Add(this.shouldRadioButton);
-			this.panel3.Controls.Add(this.shouldlyRadioButton);
-			this.panel3.Controls.Add(this.fluentAssertionsRadioButton);
-			this.panel3.Controls.Add(this.fluentLibraryHighlighterLabel);
-			this.panel3.Controls.Add(this.fluentAssertionLibraryPictureBox);
-			this.panel3.Controls.Add(this.fluentAssertionLibrarySectionLabel);
-			this.panel3.Location = new System.Drawing.Point(780, 20);
-			this.panel3.Name = "panel3";
-			this.panel3.Size = new System.Drawing.Size(360, 395);
-			this.panel3.TabIndex = 6;
+			panel3.BackColor = Color.Silver;
+			panel3.BorderStyle = BorderStyle.Fixed3D;
+			panel3.Controls.Add (nSureRadioButton);
+			panel3.Controls.Add (nFluentRadioButton);
+			panel3.Controls.Add (shouldRadioButton);
+			panel3.Controls.Add (shouldlyRadioButton);
+			panel3.Controls.Add (fluentAssertionsRadioButton);
+			panel3.Controls.Add (fluentLibraryHighlighterLabel);
+			panel3.Controls.Add (fluentAssertionLibraryPictureBox);
+			panel3.Controls.Add (fluentAssertionLibrarySectionLabel);
+			panel3.Location = new Point (780, 20);
+			panel3.Name = "panel3";
+			panel3.Size = new Size (360, 395);
+			panel3.TabIndex = 6;
 			// 
 			// nSureRadioButton
 			// 
-			this.nSureRadioButton.AutoSize = true;
-			this.nSureRadioButton.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.nSureRadioButton.ForeColor = System.Drawing.Color.Black;
-			this.nSureRadioButton.Location = new System.Drawing.Point(25, 340);
-			this.nSureRadioButton.Name = "nSureRadioButton";
-			this.nSureRadioButton.Size = new System.Drawing.Size(73, 25);
-			this.nSureRadioButton.TabIndex = 18;
-			this.nSureRadioButton.TabStop = true;
-			this.nSureRadioButton.Text = "NSure";
-			this.nSureRadioButton.UseVisualStyleBackColor = true;
-			this.nSureRadioButton.CheckedChanged += new System.EventHandler(this.fluentFrameworkChanged);
+			nSureRadioButton.AutoSize = true;
+			nSureRadioButton.Font = new Font ("Cascadia Code", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			nSureRadioButton.ForeColor = Color.Black;
+			nSureRadioButton.Location = new Point (25, 340);
+			nSureRadioButton.Name = "nSureRadioButton";
+			nSureRadioButton.Size = new Size (73, 25);
+			nSureRadioButton.TabIndex = 18;
+			nSureRadioButton.TabStop = true;
+			nSureRadioButton.Text = "NSure";
+			nSureRadioButton.UseVisualStyleBackColor = true;
+			nSureRadioButton.CheckedChanged += fluentFrameworkChanged;
 			// 
 			// nFluentRadioButton
 			// 
-			this.nFluentRadioButton.AutoSize = true;
-			this.nFluentRadioButton.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.nFluentRadioButton.ForeColor = System.Drawing.Color.Black;
-			this.nFluentRadioButton.Location = new System.Drawing.Point(25, 290);
-			this.nFluentRadioButton.Name = "nFluentRadioButton";
-			this.nFluentRadioButton.Size = new System.Drawing.Size(91, 25);
-			this.nFluentRadioButton.TabIndex = 19;
-			this.nFluentRadioButton.TabStop = true;
-			this.nFluentRadioButton.Text = "nFluent";
-			this.nFluentRadioButton.UseVisualStyleBackColor = true;
-			this.nFluentRadioButton.CheckedChanged += new System.EventHandler(this.fluentFrameworkChanged);
+			nFluentRadioButton.AutoSize = true;
+			nFluentRadioButton.Font = new Font ("Cascadia Code", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			nFluentRadioButton.ForeColor = Color.Black;
+			nFluentRadioButton.Location = new Point (25, 290);
+			nFluentRadioButton.Name = "nFluentRadioButton";
+			nFluentRadioButton.Size = new Size (91, 25);
+			nFluentRadioButton.TabIndex = 19;
+			nFluentRadioButton.TabStop = true;
+			nFluentRadioButton.Text = "nFluent";
+			nFluentRadioButton.UseVisualStyleBackColor = true;
+			nFluentRadioButton.CheckedChanged += fluentFrameworkChanged;
 			// 
 			// shouldRadioButton
 			// 
-			this.shouldRadioButton.AutoSize = true;
-			this.shouldRadioButton.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.shouldRadioButton.ForeColor = System.Drawing.Color.Black;
-			this.shouldRadioButton.Location = new System.Drawing.Point(25, 240);
-			this.shouldRadioButton.Name = "shouldRadioButton";
-			this.shouldRadioButton.Size = new System.Drawing.Size(82, 25);
-			this.shouldRadioButton.TabIndex = 20;
-			this.shouldRadioButton.TabStop = true;
-			this.shouldRadioButton.Text = "Should";
-			this.shouldRadioButton.UseVisualStyleBackColor = true;
-			this.shouldRadioButton.CheckedChanged += new System.EventHandler(this.fluentFrameworkChanged);
+			shouldRadioButton.AutoSize = true;
+			shouldRadioButton.Font = new Font ("Cascadia Code", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			shouldRadioButton.ForeColor = Color.Black;
+			shouldRadioButton.Location = new Point (25, 240);
+			shouldRadioButton.Name = "shouldRadioButton";
+			shouldRadioButton.Size = new Size (82, 25);
+			shouldRadioButton.TabIndex = 20;
+			shouldRadioButton.TabStop = true;
+			shouldRadioButton.Text = "Should";
+			shouldRadioButton.UseVisualStyleBackColor = true;
+			shouldRadioButton.CheckedChanged += fluentFrameworkChanged;
 			// 
 			// shouldlyRadioButton
 			// 
-			this.shouldlyRadioButton.AutoSize = true;
-			this.shouldlyRadioButton.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.shouldlyRadioButton.ForeColor = System.Drawing.Color.Black;
-			this.shouldlyRadioButton.Location = new System.Drawing.Point(25, 190);
-			this.shouldlyRadioButton.Name = "shouldlyRadioButton";
-			this.shouldlyRadioButton.Size = new System.Drawing.Size(100, 25);
-			this.shouldlyRadioButton.TabIndex = 21;
-			this.shouldlyRadioButton.TabStop = true;
-			this.shouldlyRadioButton.Text = "Shouldly";
-			this.shouldlyRadioButton.UseVisualStyleBackColor = true;
-			this.shouldlyRadioButton.CheckedChanged += new System.EventHandler(this.fluentFrameworkChanged);
+			shouldlyRadioButton.AutoSize = true;
+			shouldlyRadioButton.Font = new Font ("Cascadia Code", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			shouldlyRadioButton.ForeColor = Color.Black;
+			shouldlyRadioButton.Location = new Point (25, 190);
+			shouldlyRadioButton.Name = "shouldlyRadioButton";
+			shouldlyRadioButton.Size = new Size (100, 25);
+			shouldlyRadioButton.TabIndex = 21;
+			shouldlyRadioButton.TabStop = true;
+			shouldlyRadioButton.Text = "Shouldly";
+			shouldlyRadioButton.UseVisualStyleBackColor = true;
+			shouldlyRadioButton.CheckedChanged += fluentFrameworkChanged;
 			// 
 			// fluentAssertionsRadioButton
 			// 
-			this.fluentAssertionsRadioButton.AutoSize = true;
-			this.fluentAssertionsRadioButton.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.fluentAssertionsRadioButton.ForeColor = System.Drawing.Color.Black;
-			this.fluentAssertionsRadioButton.Location = new System.Drawing.Point(25, 140);
-			this.fluentAssertionsRadioButton.Name = "fluentAssertionsRadioButton";
-			this.fluentAssertionsRadioButton.Size = new System.Drawing.Size(172, 25);
-			this.fluentAssertionsRadioButton.TabIndex = 22;
-			this.fluentAssertionsRadioButton.TabStop = true;
-			this.fluentAssertionsRadioButton.Text = "FluentAssertions";
-			this.fluentAssertionsRadioButton.UseVisualStyleBackColor = true;
-			this.fluentAssertionsRadioButton.CheckedChanged += new System.EventHandler(this.fluentFrameworkChanged);
+			fluentAssertionsRadioButton.AutoSize = true;
+			fluentAssertionsRadioButton.Font = new Font ("Cascadia Code", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			fluentAssertionsRadioButton.ForeColor = Color.Black;
+			fluentAssertionsRadioButton.Location = new Point (25, 140);
+			fluentAssertionsRadioButton.Name = "fluentAssertionsRadioButton";
+			fluentAssertionsRadioButton.Size = new Size (172, 25);
+			fluentAssertionsRadioButton.TabIndex = 22;
+			fluentAssertionsRadioButton.TabStop = true;
+			fluentAssertionsRadioButton.Text = "FluentAssertions";
+			fluentAssertionsRadioButton.UseVisualStyleBackColor = true;
+			fluentAssertionsRadioButton.CheckedChanged += fluentFrameworkChanged;
 			// 
 			// fluentLibraryHighlighterLabel
 			// 
-			this.fluentLibraryHighlighterLabel.BackColor = System.Drawing.Color.Yellow;
-			this.fluentLibraryHighlighterLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.fluentLibraryHighlighterLabel.ForeColor = System.Drawing.Color.White;
-			this.fluentLibraryHighlighterLabel.Location = new System.Drawing.Point(15, 130);
-			this.fluentLibraryHighlighterLabel.Name = "fluentLibraryHighlighterLabel";
-			this.fluentLibraryHighlighterLabel.Size = new System.Drawing.Size(327, 45);
-			this.fluentLibraryHighlighterLabel.TabIndex = 23;
+			fluentLibraryHighlighterLabel.BackColor = Color.Yellow;
+			fluentLibraryHighlighterLabel.BorderStyle = BorderStyle.FixedSingle;
+			fluentLibraryHighlighterLabel.ForeColor = Color.White;
+			fluentLibraryHighlighterLabel.Location = new Point (15, 130);
+			fluentLibraryHighlighterLabel.Name = "fluentLibraryHighlighterLabel";
+			fluentLibraryHighlighterLabel.Size = new Size (327, 45);
+			fluentLibraryHighlighterLabel.TabIndex = 23;
 			// 
 			// fluentAssertionLibraryPictureBox
 			// 
-			this.fluentAssertionLibraryPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-			this.fluentAssertionLibraryPictureBox.Image = global::UnitTestGenerator.Properties.Resources.Assert;
-			this.fluentAssertionLibraryPictureBox.InitialImage = global::UnitTestGenerator.Properties.Resources.Mock;
-			this.fluentAssertionLibraryPictureBox.Location = new System.Drawing.Point(15, 15);
-			this.fluentAssertionLibraryPictureBox.Name = "fluentAssertionLibraryPictureBox";
-			this.fluentAssertionLibraryPictureBox.Size = new System.Drawing.Size(100, 100);
-			this.fluentAssertionLibraryPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.fluentAssertionLibraryPictureBox.TabIndex = 17;
-			this.fluentAssertionLibraryPictureBox.TabStop = false;
+			fluentAssertionLibraryPictureBox.BackgroundImageLayout = ImageLayout.None;
+			fluentAssertionLibraryPictureBox.Image = Properties.Resources.Assert;
+			fluentAssertionLibraryPictureBox.InitialImage = Properties.Resources.Mock;
+			fluentAssertionLibraryPictureBox.Location = new Point (15, 15);
+			fluentAssertionLibraryPictureBox.Name = "fluentAssertionLibraryPictureBox";
+			fluentAssertionLibraryPictureBox.Size = new Size (100, 100);
+			fluentAssertionLibraryPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+			fluentAssertionLibraryPictureBox.TabIndex = 17;
+			fluentAssertionLibraryPictureBox.TabStop = false;
 			// 
 			// fluentAssertionLibrarySectionLabel
 			// 
-			this.fluentAssertionLibrarySectionLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-			this.fluentAssertionLibrarySectionLabel.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.fluentAssertionLibrarySectionLabel.ForeColor = System.Drawing.Color.Transparent;
-			this.fluentAssertionLibrarySectionLabel.Image = ((System.Drawing.Image)(resources.GetObject("fluentAssertionLibrarySectionLabel.Image")));
-			this.fluentAssertionLibrarySectionLabel.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-			this.fluentAssertionLibrarySectionLabel.Location = new System.Drawing.Point(130, 15);
-			this.fluentAssertionLibrarySectionLabel.Margin = new System.Windows.Forms.Padding(0);
-			this.fluentAssertionLibrarySectionLabel.Name = "fluentAssertionLibrarySectionLabel";
-			this.fluentAssertionLibrarySectionLabel.Size = new System.Drawing.Size(210, 100);
-			this.fluentAssertionLibrarySectionLabel.TabIndex = 8;
-			this.fluentAssertionLibrarySectionLabel.Text = "Fluent Assertion Library";
-			this.fluentAssertionLibrarySectionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			fluentAssertionLibrarySectionLabel.FlatStyle = FlatStyle.Popup;
+			fluentAssertionLibrarySectionLabel.Font = new Font ("Candara", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+			fluentAssertionLibrarySectionLabel.ForeColor = Color.Transparent;
+			fluentAssertionLibrarySectionLabel.Image = (Image) resources.GetObject ("fluentAssertionLibrarySectionLabel.Image");
+			fluentAssertionLibrarySectionLabel.ImageAlign = ContentAlignment.TopRight;
+			fluentAssertionLibrarySectionLabel.Location = new Point (130, 15);
+			fluentAssertionLibrarySectionLabel.Margin = new Padding (0);
+			fluentAssertionLibrarySectionLabel.Name = "fluentAssertionLibrarySectionLabel";
+			fluentAssertionLibrarySectionLabel.Size = new Size (210, 100);
+			fluentAssertionLibrarySectionLabel.TabIndex = 8;
+			fluentAssertionLibrarySectionLabel.Text = "Fluent Assertion Library";
+			fluentAssertionLibrarySectionLabel.TextAlign = ContentAlignment.MiddleCenter;
 			// 
 			// panel2
 			// 
-			this.panel2.BackColor = System.Drawing.Color.Silver;
-			this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.panel2.Controls.Add(this.rhinoMockRadioButton);
-			this.panel2.Controls.Add(this.fakeItEasyRadioButton);
-			this.panel2.Controls.Add(this.justMockLiteRadioButton);
-			this.panel2.Controls.Add(this.nSubstituteRadioButton);
-			this.panel2.Controls.Add(this.moqRadioButton);
-			this.panel2.Controls.Add(this.mockLibraryHighlighterLabel);
-			this.panel2.Controls.Add(this.mockLibraryPictureBox);
-			this.panel2.Controls.Add(this.mockingLibrarySectionLabel);
-			this.panel2.Location = new System.Drawing.Point(400, 20);
-			this.panel2.Name = "panel2";
-			this.panel2.Size = new System.Drawing.Size(360, 395);
-			this.panel2.TabIndex = 6;
+			panel2.BackColor = Color.Silver;
+			panel2.BorderStyle = BorderStyle.Fixed3D;
+			panel2.Controls.Add (rhinoMockRadioButton);
+			panel2.Controls.Add (fakeItEasyRadioButton);
+			panel2.Controls.Add (justMockLiteRadioButton);
+			panel2.Controls.Add (nSubstituteRadioButton);
+			panel2.Controls.Add (moqRadioButton);
+			panel2.Controls.Add (mockLibraryHighlighterLabel);
+			panel2.Controls.Add (mockLibraryPictureBox);
+			panel2.Controls.Add (mockingLibrarySectionLabel);
+			panel2.Location = new Point (400, 20);
+			panel2.Name = "panel2";
+			panel2.Size = new Size (360, 395);
+			panel2.TabIndex = 6;
 			// 
 			// rhinoMockRadioButton
 			// 
-			this.rhinoMockRadioButton.AutoSize = true;
-			this.rhinoMockRadioButton.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.rhinoMockRadioButton.ForeColor = System.Drawing.Color.Black;
-			this.rhinoMockRadioButton.Location = new System.Drawing.Point(25, 340);
-			this.rhinoMockRadioButton.Name = "rhinoMockRadioButton";
-			this.rhinoMockRadioButton.Size = new System.Drawing.Size(118, 25);
-			this.rhinoMockRadioButton.TabIndex = 11;
-			this.rhinoMockRadioButton.TabStop = true;
-			this.rhinoMockRadioButton.Text = "Rhino Mock";
-			this.rhinoMockRadioButton.UseVisualStyleBackColor = true;
-			this.rhinoMockRadioButton.CheckedChanged += new System.EventHandler(this.mockFrameworkChanged);
+			rhinoMockRadioButton.AutoSize = true;
+			rhinoMockRadioButton.Font = new Font ("Cascadia Code", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			rhinoMockRadioButton.ForeColor = Color.Black;
+			rhinoMockRadioButton.Location = new Point (25, 340);
+			rhinoMockRadioButton.Name = "rhinoMockRadioButton";
+			rhinoMockRadioButton.Size = new Size (118, 25);
+			rhinoMockRadioButton.TabIndex = 11;
+			rhinoMockRadioButton.TabStop = true;
+			rhinoMockRadioButton.Text = "Rhino Mock";
+			rhinoMockRadioButton.UseVisualStyleBackColor = true;
+			rhinoMockRadioButton.CheckedChanged += mockFrameworkChanged;
 			// 
 			// fakeItEasyRadioButton
 			// 
-			this.fakeItEasyRadioButton.AutoSize = true;
-			this.fakeItEasyRadioButton.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.fakeItEasyRadioButton.ForeColor = System.Drawing.Color.Black;
-			this.fakeItEasyRadioButton.Location = new System.Drawing.Point(25, 290);
-			this.fakeItEasyRadioButton.Name = "fakeItEasyRadioButton";
-			this.fakeItEasyRadioButton.Size = new System.Drawing.Size(136, 25);
-			this.fakeItEasyRadioButton.TabIndex = 12;
-			this.fakeItEasyRadioButton.TabStop = true;
-			this.fakeItEasyRadioButton.Text = "Fake It Easy";
-			this.fakeItEasyRadioButton.UseVisualStyleBackColor = true;
-			this.fakeItEasyRadioButton.CheckedChanged += new System.EventHandler(this.mockFrameworkChanged);
+			fakeItEasyRadioButton.AutoSize = true;
+			fakeItEasyRadioButton.Font = new Font ("Cascadia Code", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			fakeItEasyRadioButton.ForeColor = Color.Black;
+			fakeItEasyRadioButton.Location = new Point (25, 290);
+			fakeItEasyRadioButton.Name = "fakeItEasyRadioButton";
+			fakeItEasyRadioButton.Size = new Size (136, 25);
+			fakeItEasyRadioButton.TabIndex = 12;
+			fakeItEasyRadioButton.TabStop = true;
+			fakeItEasyRadioButton.Text = "Fake It Easy";
+			fakeItEasyRadioButton.UseVisualStyleBackColor = true;
+			fakeItEasyRadioButton.CheckedChanged += mockFrameworkChanged;
 			// 
 			// justMockLiteRadioButton
 			// 
-			this.justMockLiteRadioButton.AutoSize = true;
-			this.justMockLiteRadioButton.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.justMockLiteRadioButton.ForeColor = System.Drawing.Color.Black;
-			this.justMockLiteRadioButton.Location = new System.Drawing.Point(25, 240);
-			this.justMockLiteRadioButton.Name = "justMockLiteRadioButton";
-			this.justMockLiteRadioButton.Size = new System.Drawing.Size(181, 25);
-			this.justMockLiteRadioButton.TabIndex = 13;
-			this.justMockLiteRadioButton.TabStop = true;
-			this.justMockLiteRadioButton.Text = "Telerik Just Mock";
-			this.justMockLiteRadioButton.UseVisualStyleBackColor = true;
-			this.justMockLiteRadioButton.CheckedChanged += new System.EventHandler(this.mockFrameworkChanged);
+			justMockLiteRadioButton.AutoSize = true;
+			justMockLiteRadioButton.Font = new Font ("Cascadia Code", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			justMockLiteRadioButton.ForeColor = Color.Black;
+			justMockLiteRadioButton.Location = new Point (25, 240);
+			justMockLiteRadioButton.Name = "justMockLiteRadioButton";
+			justMockLiteRadioButton.Size = new Size (181, 25);
+			justMockLiteRadioButton.TabIndex = 13;
+			justMockLiteRadioButton.TabStop = true;
+			justMockLiteRadioButton.Text = "Telerik Just Mock";
+			justMockLiteRadioButton.UseVisualStyleBackColor = true;
+			justMockLiteRadioButton.CheckedChanged += mockFrameworkChanged;
 			// 
 			// nSubstituteRadioButton
 			// 
-			this.nSubstituteRadioButton.AutoSize = true;
-			this.nSubstituteRadioButton.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.nSubstituteRadioButton.ForeColor = System.Drawing.Color.Black;
-			this.nSubstituteRadioButton.Location = new System.Drawing.Point(25, 190);
-			this.nSubstituteRadioButton.Name = "nSubstituteRadioButton";
-			this.nSubstituteRadioButton.Size = new System.Drawing.Size(127, 25);
-			this.nSubstituteRadioButton.TabIndex = 14;
-			this.nSubstituteRadioButton.TabStop = true;
-			this.nSubstituteRadioButton.Text = "nSubstitute";
-			this.nSubstituteRadioButton.UseVisualStyleBackColor = true;
-			this.nSubstituteRadioButton.CheckedChanged += new System.EventHandler(this.mockFrameworkChanged);
+			nSubstituteRadioButton.AutoSize = true;
+			nSubstituteRadioButton.Font = new Font ("Cascadia Code", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			nSubstituteRadioButton.ForeColor = Color.Black;
+			nSubstituteRadioButton.Location = new Point (25, 190);
+			nSubstituteRadioButton.Name = "nSubstituteRadioButton";
+			nSubstituteRadioButton.Size = new Size (127, 25);
+			nSubstituteRadioButton.TabIndex = 14;
+			nSubstituteRadioButton.TabStop = true;
+			nSubstituteRadioButton.Text = "nSubstitute";
+			nSubstituteRadioButton.UseVisualStyleBackColor = true;
+			nSubstituteRadioButton.CheckedChanged += mockFrameworkChanged;
 			// 
 			// moqRadioButton
 			// 
-			this.moqRadioButton.AutoSize = true;
-			this.moqRadioButton.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.moqRadioButton.ForeColor = System.Drawing.Color.Black;
-			this.moqRadioButton.Location = new System.Drawing.Point(25, 140);
-			this.moqRadioButton.Name = "moqRadioButton";
-			this.moqRadioButton.Size = new System.Drawing.Size(55, 25);
-			this.moqRadioButton.TabIndex = 15;
-			this.moqRadioButton.TabStop = true;
-			this.moqRadioButton.Text = "Moq";
-			this.moqRadioButton.UseVisualStyleBackColor = true;
-			this.moqRadioButton.CheckedChanged += new System.EventHandler(this.mockFrameworkChanged);
+			moqRadioButton.AutoSize = true;
+			moqRadioButton.Font = new Font ("Cascadia Code", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			moqRadioButton.ForeColor = Color.Black;
+			moqRadioButton.Location = new Point (25, 140);
+			moqRadioButton.Name = "moqRadioButton";
+			moqRadioButton.Size = new Size (55, 25);
+			moqRadioButton.TabIndex = 15;
+			moqRadioButton.TabStop = true;
+			moqRadioButton.Text = "Moq";
+			moqRadioButton.UseVisualStyleBackColor = true;
+			moqRadioButton.CheckedChanged += mockFrameworkChanged;
 			// 
 			// mockLibraryHighlighterLabel
 			// 
-			this.mockLibraryHighlighterLabel.BackColor = System.Drawing.Color.Yellow;
-			this.mockLibraryHighlighterLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.mockLibraryHighlighterLabel.Location = new System.Drawing.Point(15, 130);
-			this.mockLibraryHighlighterLabel.Name = "mockLibraryHighlighterLabel";
-			this.mockLibraryHighlighterLabel.Size = new System.Drawing.Size(327, 45);
-			this.mockLibraryHighlighterLabel.TabIndex = 16;
+			mockLibraryHighlighterLabel.BackColor = Color.Yellow;
+			mockLibraryHighlighterLabel.BorderStyle = BorderStyle.FixedSingle;
+			mockLibraryHighlighterLabel.Location = new Point (15, 130);
+			mockLibraryHighlighterLabel.Name = "mockLibraryHighlighterLabel";
+			mockLibraryHighlighterLabel.Size = new Size (327, 45);
+			mockLibraryHighlighterLabel.TabIndex = 16;
 			// 
 			// mockLibraryPictureBox
 			// 
-			this.mockLibraryPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-			this.mockLibraryPictureBox.Image = global::UnitTestGenerator.Properties.Resources.Mock;
-			this.mockLibraryPictureBox.InitialImage = global::UnitTestGenerator.Properties.Resources.Mock;
-			this.mockLibraryPictureBox.Location = new System.Drawing.Point(15, 15);
-			this.mockLibraryPictureBox.Name = "mockLibraryPictureBox";
-			this.mockLibraryPictureBox.Size = new System.Drawing.Size(100, 100);
-			this.mockLibraryPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.mockLibraryPictureBox.TabIndex = 10;
-			this.mockLibraryPictureBox.TabStop = false;
+			mockLibraryPictureBox.BackgroundImageLayout = ImageLayout.None;
+			mockLibraryPictureBox.Image = Properties.Resources.Mock;
+			mockLibraryPictureBox.InitialImage = Properties.Resources.Mock;
+			mockLibraryPictureBox.Location = new Point (15, 15);
+			mockLibraryPictureBox.Name = "mockLibraryPictureBox";
+			mockLibraryPictureBox.Size = new Size (100, 100);
+			mockLibraryPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+			mockLibraryPictureBox.TabIndex = 10;
+			mockLibraryPictureBox.TabStop = false;
 			// 
 			// mockingLibrarySectionLabel
 			// 
-			this.mockingLibrarySectionLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-			this.mockingLibrarySectionLabel.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.mockingLibrarySectionLabel.ForeColor = System.Drawing.Color.Transparent;
-			this.mockingLibrarySectionLabel.Image = ((System.Drawing.Image)(resources.GetObject("mockingLibrarySectionLabel.Image")));
-			this.mockingLibrarySectionLabel.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-			this.mockingLibrarySectionLabel.Location = new System.Drawing.Point(130, 15);
-			this.mockingLibrarySectionLabel.Margin = new System.Windows.Forms.Padding(0);
-			this.mockingLibrarySectionLabel.Name = "mockingLibrarySectionLabel";
-			this.mockingLibrarySectionLabel.Size = new System.Drawing.Size(210, 100);
-			this.mockingLibrarySectionLabel.TabIndex = 8;
-			this.mockingLibrarySectionLabel.Text = "Mocking Library";
-			this.mockingLibrarySectionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			mockingLibrarySectionLabel.FlatStyle = FlatStyle.Popup;
+			mockingLibrarySectionLabel.Font = new Font ("Candara", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+			mockingLibrarySectionLabel.ForeColor = Color.Transparent;
+			mockingLibrarySectionLabel.Image = (Image) resources.GetObject ("mockingLibrarySectionLabel.Image");
+			mockingLibrarySectionLabel.ImageAlign = ContentAlignment.TopRight;
+			mockingLibrarySectionLabel.Location = new Point (130, 15);
+			mockingLibrarySectionLabel.Margin = new Padding (0);
+			mockingLibrarySectionLabel.Name = "mockingLibrarySectionLabel";
+			mockingLibrarySectionLabel.Size = new Size (210, 100);
+			mockingLibrarySectionLabel.TabIndex = 8;
+			mockingLibrarySectionLabel.Text = "Mocking Library";
+			mockingLibrarySectionLabel.TextAlign = ContentAlignment.MiddleCenter;
 			// 
 			// panel1
 			// 
-			this.panel1.BackColor = System.Drawing.Color.Silver;
-			this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.panel1.Controls.Add(this.unitTestFrameworkSectionLabel);
-			this.panel1.Controls.Add(this.nSpecRadioButton);
-			this.panel1.Controls.Add(this.xBehaveRadioButton);
-			this.panel1.Controls.Add(this.msTestRadioButton);
-			this.panel1.Controls.Add(this.xUnitRadioButton);
-			this.panel1.Controls.Add(this.nUnitRadioButton);
-			this.panel1.Controls.Add(this.utLibraryHighlighterLabel);
-			this.panel1.Controls.Add(this.utLibraryPictureBox);
-			this.panel1.Location = new System.Drawing.Point(20, 20);
-			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(360, 395);
-			this.panel1.TabIndex = 5;
+			panel1.BackColor = Color.Silver;
+			panel1.BorderStyle = BorderStyle.Fixed3D;
+			panel1.Controls.Add (unitTestFrameworkSectionLabel);
+			panel1.Controls.Add (nSpecRadioButton);
+			panel1.Controls.Add (xBehaveRadioButton);
+			panel1.Controls.Add (msTestRadioButton);
+			panel1.Controls.Add (xUnitRadioButton);
+			panel1.Controls.Add (nUnitRadioButton);
+			panel1.Controls.Add (utLibraryHighlighterLabel);
+			panel1.Controls.Add (utLibraryPictureBox);
+			panel1.Location = new Point (20, 20);
+			panel1.Name = "panel1";
+			panel1.Size = new Size (360, 395);
+			panel1.TabIndex = 5;
 			// 
 			// unitTestFrameworkSectionLabel
 			// 
-			this.unitTestFrameworkSectionLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-			this.unitTestFrameworkSectionLabel.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this.unitTestFrameworkSectionLabel.ForeColor = System.Drawing.Color.Black;
-			this.unitTestFrameworkSectionLabel.Image = global::UnitTestGenerator.Properties.Resources.Unit_Test_Framework_Label2;
-			this.unitTestFrameworkSectionLabel.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-			this.unitTestFrameworkSectionLabel.Location = new System.Drawing.Point(130, 15);
-			this.unitTestFrameworkSectionLabel.Margin = new System.Windows.Forms.Padding(0);
-			this.unitTestFrameworkSectionLabel.Name = "unitTestFrameworkSectionLabel";
-			this.unitTestFrameworkSectionLabel.Size = new System.Drawing.Size(210, 100);
-			this.unitTestFrameworkSectionLabel.TabIndex = 8;
-			this.unitTestFrameworkSectionLabel.Text = "Unit Test Framework";
-			this.unitTestFrameworkSectionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			unitTestFrameworkSectionLabel.FlatStyle = FlatStyle.Popup;
+			unitTestFrameworkSectionLabel.Font = new Font ("Candara", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+			unitTestFrameworkSectionLabel.ForeColor = Color.Black;
+			unitTestFrameworkSectionLabel.Image = Properties.Resources.Unit_Test_Framework_Label2;
+			unitTestFrameworkSectionLabel.ImageAlign = ContentAlignment.TopRight;
+			unitTestFrameworkSectionLabel.Location = new Point (130, 15);
+			unitTestFrameworkSectionLabel.Margin = new Padding (0);
+			unitTestFrameworkSectionLabel.Name = "unitTestFrameworkSectionLabel";
+			unitTestFrameworkSectionLabel.Size = new Size (210, 100);
+			unitTestFrameworkSectionLabel.TabIndex = 8;
+			unitTestFrameworkSectionLabel.Text = "Unit Test Framework";
+			unitTestFrameworkSectionLabel.TextAlign = ContentAlignment.MiddleCenter;
 			// 
 			// nSpecRadioButton
 			// 
-			this.nSpecRadioButton.AutoSize = true;
-			this.nSpecRadioButton.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.nSpecRadioButton.ForeColor = System.Drawing.Color.Black;
-			this.nSpecRadioButton.Location = new System.Drawing.Point(25, 340);
-			this.nSpecRadioButton.Name = "nSpecRadioButton";
-			this.nSpecRadioButton.Size = new System.Drawing.Size(73, 25);
-			this.nSpecRadioButton.TabIndex = 2;
-			this.nSpecRadioButton.TabStop = true;
-			this.nSpecRadioButton.Text = "nSpec";
-			this.nSpecRadioButton.UseVisualStyleBackColor = true;
-			this.nSpecRadioButton.CheckedChanged += new System.EventHandler(this.utFrameworkChanged);
+			nSpecRadioButton.AutoSize = true;
+			nSpecRadioButton.Font = new Font ("Cascadia Code", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			nSpecRadioButton.ForeColor = Color.Black;
+			nSpecRadioButton.Location = new Point (25, 340);
+			nSpecRadioButton.Name = "nSpecRadioButton";
+			nSpecRadioButton.Size = new Size (73, 25);
+			nSpecRadioButton.TabIndex = 2;
+			nSpecRadioButton.TabStop = true;
+			nSpecRadioButton.Text = "nSpec";
+			nSpecRadioButton.UseVisualStyleBackColor = true;
+			nSpecRadioButton.CheckedChanged += utFrameworkChanged;
 			// 
 			// xBehaveRadioButton
 			// 
-			this.xBehaveRadioButton.AutoSize = true;
-			this.xBehaveRadioButton.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.xBehaveRadioButton.ForeColor = System.Drawing.Color.Black;
-			this.xBehaveRadioButton.Location = new System.Drawing.Point(25, 290);
-			this.xBehaveRadioButton.Name = "xBehaveRadioButton";
-			this.xBehaveRadioButton.Size = new System.Drawing.Size(91, 25);
-			this.xBehaveRadioButton.TabIndex = 3;
-			this.xBehaveRadioButton.TabStop = true;
-			this.xBehaveRadioButton.Text = "xBehave";
-			this.xBehaveRadioButton.UseVisualStyleBackColor = true;
-			this.xBehaveRadioButton.CheckedChanged += new System.EventHandler(this.utFrameworkChanged);
+			xBehaveRadioButton.AutoSize = true;
+			xBehaveRadioButton.Font = new Font ("Cascadia Code", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			xBehaveRadioButton.ForeColor = Color.Black;
+			xBehaveRadioButton.Location = new Point (25, 290);
+			xBehaveRadioButton.Name = "xBehaveRadioButton";
+			xBehaveRadioButton.Size = new Size (91, 25);
+			xBehaveRadioButton.TabIndex = 3;
+			xBehaveRadioButton.TabStop = true;
+			xBehaveRadioButton.Text = "xBehave";
+			xBehaveRadioButton.UseVisualStyleBackColor = true;
+			xBehaveRadioButton.CheckedChanged += utFrameworkChanged;
 			// 
 			// msTestRadioButton
 			// 
-			this.msTestRadioButton.AutoSize = true;
-			this.msTestRadioButton.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.msTestRadioButton.ForeColor = System.Drawing.Color.Black;
-			this.msTestRadioButton.Location = new System.Drawing.Point(25, 240);
-			this.msTestRadioButton.Name = "msTestRadioButton";
-			this.msTestRadioButton.Size = new System.Drawing.Size(154, 25);
-			this.msTestRadioButton.TabIndex = 4;
-			this.msTestRadioButton.TabStop = true;
-			this.msTestRadioButton.Text = "Microsoft Test";
-			this.msTestRadioButton.UseVisualStyleBackColor = true;
-			this.msTestRadioButton.CheckedChanged += new System.EventHandler(this.utFrameworkChanged);
+			msTestRadioButton.AutoSize = true;
+			msTestRadioButton.Font = new Font ("Cascadia Code", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			msTestRadioButton.ForeColor = Color.Black;
+			msTestRadioButton.Location = new Point (25, 240);
+			msTestRadioButton.Name = "msTestRadioButton";
+			msTestRadioButton.Size = new Size (154, 25);
+			msTestRadioButton.TabIndex = 4;
+			msTestRadioButton.TabStop = true;
+			msTestRadioButton.Text = "Microsoft Test";
+			msTestRadioButton.UseVisualStyleBackColor = true;
+			msTestRadioButton.CheckedChanged += utFrameworkChanged;
 			// 
 			// xUnitRadioButton
 			// 
-			this.xUnitRadioButton.AutoSize = true;
-			this.xUnitRadioButton.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.xUnitRadioButton.ForeColor = System.Drawing.Color.Black;
-			this.xUnitRadioButton.Location = new System.Drawing.Point(25, 190);
-			this.xUnitRadioButton.Name = "xUnitRadioButton";
-			this.xUnitRadioButton.Size = new System.Drawing.Size(73, 25);
-			this.xUnitRadioButton.TabIndex = 5;
-			this.xUnitRadioButton.TabStop = true;
-			this.xUnitRadioButton.Text = "xUnit";
-			this.xUnitRadioButton.UseVisualStyleBackColor = true;
-			this.xUnitRadioButton.CheckedChanged += new System.EventHandler(this.utFrameworkChanged);
+			xUnitRadioButton.AutoSize = true;
+			xUnitRadioButton.Font = new Font ("Cascadia Code", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			xUnitRadioButton.ForeColor = Color.Black;
+			xUnitRadioButton.Location = new Point (25, 190);
+			xUnitRadioButton.Name = "xUnitRadioButton";
+			xUnitRadioButton.Size = new Size (73, 25);
+			xUnitRadioButton.TabIndex = 5;
+			xUnitRadioButton.TabStop = true;
+			xUnitRadioButton.Text = "xUnit";
+			xUnitRadioButton.UseVisualStyleBackColor = true;
+			xUnitRadioButton.CheckedChanged += utFrameworkChanged;
 			// 
 			// nUnitRadioButton
 			// 
-			this.nUnitRadioButton.AutoSize = true;
-			this.nUnitRadioButton.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.nUnitRadioButton.ForeColor = System.Drawing.Color.Black;
-			this.nUnitRadioButton.Location = new System.Drawing.Point(25, 140);
-			this.nUnitRadioButton.Name = "nUnitRadioButton";
-			this.nUnitRadioButton.Size = new System.Drawing.Size(73, 25);
-			this.nUnitRadioButton.TabIndex = 6;
-			this.nUnitRadioButton.TabStop = true;
-			this.nUnitRadioButton.Text = "nUnit";
-			this.nUnitRadioButton.UseVisualStyleBackColor = true;
-			this.nUnitRadioButton.CheckedChanged += new System.EventHandler(this.utFrameworkChanged);
+			nUnitRadioButton.AutoSize = true;
+			nUnitRadioButton.Font = new Font ("Cascadia Code", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			nUnitRadioButton.ForeColor = Color.Black;
+			nUnitRadioButton.Location = new Point (25, 140);
+			nUnitRadioButton.Name = "nUnitRadioButton";
+			nUnitRadioButton.Size = new Size (73, 25);
+			nUnitRadioButton.TabIndex = 6;
+			nUnitRadioButton.TabStop = true;
+			nUnitRadioButton.Text = "nUnit";
+			nUnitRadioButton.UseVisualStyleBackColor = true;
+			nUnitRadioButton.CheckedChanged += utFrameworkChanged;
 			// 
 			// utLibraryHighlighterLabel
 			// 
-			this.utLibraryHighlighterLabel.BackColor = System.Drawing.Color.Yellow;
-			this.utLibraryHighlighterLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.utLibraryHighlighterLabel.Location = new System.Drawing.Point(15, 130);
-			this.utLibraryHighlighterLabel.Name = "utLibraryHighlighterLabel";
-			this.utLibraryHighlighterLabel.Size = new System.Drawing.Size(327, 45);
-			this.utLibraryHighlighterLabel.TabIndex = 7;
+			utLibraryHighlighterLabel.BackColor = Color.Yellow;
+			utLibraryHighlighterLabel.BorderStyle = BorderStyle.FixedSingle;
+			utLibraryHighlighterLabel.Location = new Point (15, 130);
+			utLibraryHighlighterLabel.Name = "utLibraryHighlighterLabel";
+			utLibraryHighlighterLabel.Size = new Size (327, 45);
+			utLibraryHighlighterLabel.TabIndex = 7;
 			// 
 			// utLibraryPictureBox
 			// 
-			this.utLibraryPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-			this.utLibraryPictureBox.Image = global::UnitTestGenerator.Properties.Resources.UnitTest;
-			this.utLibraryPictureBox.Location = new System.Drawing.Point(15, 15);
-			this.utLibraryPictureBox.Name = "utLibraryPictureBox";
-			this.utLibraryPictureBox.Size = new System.Drawing.Size(100, 100);
-			this.utLibraryPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.utLibraryPictureBox.TabIndex = 9;
-			this.utLibraryPictureBox.TabStop = false;
+			utLibraryPictureBox.BackgroundImageLayout = ImageLayout.None;
+			utLibraryPictureBox.Image = Properties.Resources.UnitTest;
+			utLibraryPictureBox.Location = new Point (15, 15);
+			utLibraryPictureBox.Name = "utLibraryPictureBox";
+			utLibraryPictureBox.Size = new Size (100, 100);
+			utLibraryPictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+			utLibraryPictureBox.TabIndex = 9;
+			utLibraryPictureBox.TabStop = false;
 			// 
 			// openDllDialog
 			// 
-			this.openDllDialog.DefaultExt = "*.dll";
-			this.openDllDialog.FileName = "*.dll";
-			this.openDllDialog.Filter = "*.dll|DLL Files";
-			this.openDllDialog.FilterIndex = 0;
-			this.openDllDialog.Title = "Locate the DLL where Target Concrete Classes are present";
+			openDllDialog.DefaultExt = "*.dll";
+			openDllDialog.FileName = "*.dll";
+			openDllDialog.Filter = "*.dll|DLL Files";
+			openDllDialog.FilterIndex = 0;
+			openDllDialog.Title = "Locate the DLL where Target Concrete Classes are present";
 			// 
 			// backgroundImageList
 			// 
-			this.backgroundImageList.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
-			this.backgroundImageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("backgroundImageList.ImageStream")));
-			this.backgroundImageList.TransparentColor = System.Drawing.Color.Transparent;
-			this.backgroundImageList.Images.SetKeyName(0, "Unit Test Framework Label.jpg");
-			this.backgroundImageList.Images.SetKeyName(1, "Mock Library Label.jpg");
-			this.backgroundImageList.Images.SetKeyName(2, "Fluent Assertion Library Label.jpg");
-			this.backgroundImageList.Images.SetKeyName(3, "Test Data Library Label.jpg");
-			this.backgroundImageList.Images.SetKeyName(4, "Target Method Label.png");
+			backgroundImageList.ColorDepth = ColorDepth.Depth32Bit;
+			backgroundImageList.ImageStream = (ImageListStreamer) resources.GetObject ("backgroundImageList.ImageStream");
+			backgroundImageList.TransparentColor = Color.Transparent;
+			backgroundImageList.Images.SetKeyName (0, "Unit Test Framework Label.jpg");
+			backgroundImageList.Images.SetKeyName (1, "Mock Library Label.jpg");
+			backgroundImageList.Images.SetKeyName (2, "Fluent Assertion Library Label.jpg");
+			backgroundImageList.Images.SetKeyName (3, "Test Data Library Label.jpg");
+			backgroundImageList.Images.SetKeyName (4, "Target Method Label.png");
 			// 
 			// whereToSaveFolderDialog
 			// 
-			this.whereToSaveFolderDialog.Description = "Select the folder where you want to save the scaffolded Unit Test";
-			this.whereToSaveFolderDialog.RootFolder = System.Environment.SpecialFolder.Recent;
-			this.whereToSaveFolderDialog.SelectedPath = "C:\\";
+			whereToSaveFolderDialog.Description = "Select the folder where you want to save the scaffolded Unit Test";
+			whereToSaveFolderDialog.RootFolder = Environment.SpecialFolder.Recent;
+			whereToSaveFolderDialog.SelectedPath = "C:\\";
 			// 
 			// UnitTestGeneratorScreen
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackColor = System.Drawing.Color.PowderBlue;
-			this.ClientSize = new System.Drawing.Size(1904, 1041);
-			this.Controls.Add(this.unitGenTabControl);
-			this.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-			this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-			this.MaximizeBox = false;
-			this.Name = "UnitTestGeneratorScreen";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "Unit Test Generator";
-			this.Load += new System.EventHandler(this.UnitTestGeneratorScreen_Load);
-			this.unitGenTabControl.ResumeLayout(false);
-			this.targetPublicMethodsTabPage.ResumeLayout(false);
-			this.panel6.ResumeLayout(false);
-			this.panel6.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.concreteClassPictureBox)).EndInit();
-			this.generatedUnitTestsTabPage.ResumeLayout(false);
-			this.panel7.ResumeLayout(false);
-			this.unitTestOptionsTabPage.ResumeLayout(false);
-			this.unitTestOptionsTabPage.PerformLayout();
-			this.panel5.ResumeLayout(false);
-			this.panel5.PerformLayout();
-			this.panel4.ResumeLayout(false);
-			this.panel4.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.testDataPrepLibraryPictureBox)).EndInit();
-			this.panel3.ResumeLayout(false);
-			this.panel3.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.fluentAssertionLibraryPictureBox)).EndInit();
-			this.panel2.ResumeLayout(false);
-			this.panel2.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.mockLibraryPictureBox)).EndInit();
-			this.panel1.ResumeLayout(false);
-			this.panel1.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.utLibraryPictureBox)).EndInit();
-			this.ResumeLayout(false);
+			AutoScaleDimensions = new SizeF (9F, 19F);
+			AutoScaleMode = AutoScaleMode.Font;
+			BackColor = Color.PowderBlue;
+			ClientSize = new Size (1904, 1041);
+			Controls.Add (unitGenTabControl);
+			Font = new Font ("Tahoma", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			Icon = (Icon) resources.GetObject ("$this.Icon");
+			Margin = new Padding (5, 6, 5, 6);
+			MaximizeBox = false;
+			Name = "UnitTestGeneratorScreen";
+			StartPosition = FormStartPosition.CenterScreen;
+			Text = "Unit Test Generator";
+			Load += UnitTestGeneratorScreen_Load;
+			unitGenTabControl.ResumeLayout (false);
+			targetPublicMethodsTabPage.ResumeLayout (false);
+			panel6.ResumeLayout (false);
+			panel6.PerformLayout ();
+			((System.ComponentModel.ISupportInitialize) concreteClassPictureBox).EndInit ();
+			generatedUnitTestsTabPage.ResumeLayout (false);
+			panel7.ResumeLayout (false);
+			unitTestOptionsTabPage.ResumeLayout (false);
+			unitTestOptionsTabPage.PerformLayout ();
+			panel5.ResumeLayout (false);
+			panel5.PerformLayout ();
+			panel4.ResumeLayout (false);
+			panel4.PerformLayout ();
+			((System.ComponentModel.ISupportInitialize) testDataPrepLibraryPictureBox).EndInit ();
+			panel3.ResumeLayout (false);
+			panel3.PerformLayout ();
+			((System.ComponentModel.ISupportInitialize) fluentAssertionLibraryPictureBox).EndInit ();
+			panel2.ResumeLayout (false);
+			panel2.PerformLayout ();
+			((System.ComponentModel.ISupportInitialize) mockLibraryPictureBox).EndInit ();
+			panel1.ResumeLayout (false);
+			panel1.PerformLayout ();
+			((System.ComponentModel.ISupportInitialize) utLibraryPictureBox).EndInit ();
+			ResumeLayout (false);
 
-        }
+		}
 
-        #endregion
+		#endregion
 
-        private TabControl unitGenTabControl;
+		private TabControl unitGenTabControl;
         private TabPage unitTestOptionsTabPage;
         private TabPage targetPublicMethodsTabPage;
 		private OpenFileDialog openDllDialog;

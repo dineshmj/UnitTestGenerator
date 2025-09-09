@@ -97,6 +97,7 @@ namespace UnitTestGenerator
 			"// Method parameters",
 			"// Please specify valid expected result here.",
 			"// Please set the correct value.",
+			"// Dummy assertion statement for a void target method. Please specify correct expectation.",
 			"// Expected and actual results",
 			"// Mock dependency method calls",
 			"// Test data preparation support.",

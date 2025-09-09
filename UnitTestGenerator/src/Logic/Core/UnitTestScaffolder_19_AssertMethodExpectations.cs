@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System;
+using System.Text;
 
 using UnitTestGenerator.Logic.Support.Extensions;
 
@@ -46,8 +47,28 @@ namespace UnitTestGenerator.Logic.Core
                     builder.AppendLine ($"\t\t\t{additionalIndent}{oneStatement}");
 				}
 			}
+			else
+			{
+				//
+				// The method call returns void.
+				// You can only assert the state of the target class itself.
+				//
+				var targetInstanceState = string.Empty;
+                var targetClassName = this.context.DeclaringTypeName;
+                if (isHappy)
+                {
+                    targetInstanceState = asserter.GetShouldNotBeNull ($"this.{targetClassName.ToCamelCase ()}");
+                }
+                else
+                {
+                    targetInstanceState = asserter.GetShouldBeNull ($"this.{targetClassName.ToCamelCase ()}");
+                }
 
-			if (verifyAllStatements.Count > 0)
+                builder.AppendLine ($"\t\t\t{additionalIndent}{targetInstanceState}\t\t// Dummy assertion statement for a void target method. Please specify correct expectation.");
+            }
+
+			// If void dependency calls are present, assert on them having been called.
+            if (verifyAllStatements.Count > 0)
 			{
 				if (isHappy == false && addToDoComments)
 				{

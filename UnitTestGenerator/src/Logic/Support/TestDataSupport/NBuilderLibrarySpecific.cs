@@ -1,4 +1,7 @@
-﻿using UnitTestGenerator.Logic.Entities;
+﻿using System;
+
+using UnitTestGenerator.Logic.Entities;
+using UnitTestGenerator.Logic.Support.Extensions;
 using UnitTestGenerator.Logic.Support.Utilities;
 
 namespace UnitTestGenerator.Logic.Support.TestDataSupport
@@ -18,16 +21,23 @@ namespace UnitTestGenerator.Logic.Support.TestDataSupport
 
 		public bool IsTestDataLibraryUsed { get; private set; }
 
-		public string GetNewInstanceFor (string variableName, string typeName, bool isHappy)
+		public string GetNewInstanceFor (string variableName, Type type, bool isHappy)
 		{
-			var meaningfulData = typeName.GetMeaningfulData (isHappy);
+			var typeName = type.GetRealGenericTypeName ();
+            var meaningfulData = typeName.GetMeaningfulData (isHappy);
 
 			if (null != meaningfulData)
 			{
 				return $"{variableName} = { meaningfulData};\t\t// Please set the correct value.";
 			}
 
-			this.IsTestDataLibraryUsed = true;
+			if (type.IsEnum)
+			{
+				var enumValue = $"{type.Name}.{Enum.GetNames (type) [0]}";
+                return $"{variableName} = {enumValue};";
+            }
+
+            this.IsTestDataLibraryUsed = true;
 			return $"{variableName} = Builder<{typeName}>.CreateNew ().Build ();";
 		}
 	}

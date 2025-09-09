@@ -96,8 +96,8 @@ namespace UnitTestGenerator
 			// Options.
 			this.AddAssertionsForVoidDependencyCalls = false;
 			this.AddUsingStatementsForUnusedLibrariesAlso = false;
-			this.AddToDoComments = true;
-			this.AddFriendlyComments = false;
+			this.AddToDoComments = false;
+			this.AddFriendlyComments = true;
 
 			this.RememberMyPreferences = true;
 		}
